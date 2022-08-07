@@ -1,0 +1,54 @@
+Mth256/656 Textbook Problems:  Statistics: McClave and Sincich
+
+Chpt 1: Intro to Stats: 
+11th ed: 1 thru 9, 14-16, do Applets 1.1 and 1.2
+12th ed: 1 thru 9, 14-16, do Applets 1.1 and 1.2
+
+Chpt 2: Descriptive Stats:  
+11th ed: s1 qual: 1, 5, 7; s2 quant/hist: 22, 25; s3 summation: 42; s4 center: 46, 59, 51; s5 variab: 69, 71, 73, 76a
+	s6 interpret sd: 90, 95, 102; s7 percentile: 107; s8 outlier, iqr, boxplot: 118, 120, 124, 125, 135; s9: graph biv: 142, 148, 166, 172
+12th ed: s1:1, 5, 9; s2: 24, 27; s3: 44; s4: 48, 51, 52; s5: 71, 73, 75,  68a; s6: 94, 99, 106; s7 112; s8: 125, 126, 130, 131, 142; s9: 150, 156, 174, 180.
+
+chpt 3: Probability  
+11th ed: s1 events, space: 1, 15, 16 (read only), App 3.1, App 3.2, 22, 30, 32; s2 thru 4: unions, intersection, addition rule: 33, 34, 35, 41, 48;
+s5 and 6: condit prob, tree diag: 63, 67, 73, 81, 89; s7 random sampl: 94, 99a-c; 104; SKIP s8: for s9 Bayes: 133, 135; ssupl: 156, 192, 196
+12th ed: s1: 1, 15, 16 (read only), app 3.1, app 3.2, 24, 32, 34; s2-4: 35, 36, 37, 43, 52; s5-6: 67, 71, 79, 87, 90; s7: 98, 103a-c, 110; SKIP s8; for s9: 143, 145; ssuppl: 170, 192, 196
+
+chpt 4: Discrete Random Variables
+11th ed: s1 and 2 intro rv: 4, 7, 8, 13, 30, app 4.1; s3 ev and sd of rv: 32, 33, 42, 44; s4 binomial: 48, 52, 6, 67; s5 poisson 73, 83; s6 hypergeo: 92, 93, 94, 95, 100; ssuppl: 116, 123;
+12th ed: s1,2: 4, 7, 9, 15, 32, app 4.1; s3 34, 35, 44, 46; s4: 50, 54, 70, 71; s5: 77, 87; s6: 98, 99, 100, 101, 106; ssuppll: 124, 131.
+
+chpt 5 Continuous Random variables
+11th ed: s1 and 2: intro and uniform: 1, 3, 5, 9, 15, 16, 17, app 5.1, app 5.2; s3 normal: 19, 20, 21,24, 30 App 5.3; s4 and 5 ck normal and approx: 51, 55, 57, 58abc, 70, 71;
+s6 expon: 89, 94, 100;
+12th ed: s1 and 2: 1, 3, 5, 11, 17, 16, 19; s3: 20, 21, 22, 26, 31; s4 and 5: 53, 60abc, 55, 57, 73, 74; s6: 89, 98, 105
+
+chpt 6 Sampling istributions
+11th ed: s1: concepts: 1, 2, 3, 4 excel read only, 5; s2: properties: 13, 14; s3 sample avg and clt: 22, 23, 35, 37; supp: 46, 48, 63, 69
+12th ed: s1: 1, 2, 3, 4 excel read only, 5;s2: 13, 14, s3: 22, 23, 35, 37; supp: 48, 50, 65, 70
+
+chpt 7 Inference single sample: conf interval
+11th ed: s1 and s2: large sample ci for M: 3, 4, 5, 6, 10, 13, 16, 23, app 7.1, 72.; s3: sample sample ci for M: 25, 26, 29, 36; s4 large ci for p: 44, 45, 57; s5 sample size; 62, 63, 71, 80;
+12th ed: s1 and 2: 3, 4, 5, 6, 10, 13, 18, 25, app 7.1 , 7.2; s3: 26, 27, 31, 40; s4: 44, 45, 63; s5: 68, 69, 77, 90;
+
+chpt 8 Inference single sample: test of hypothesis
+11th ed: s1: intro: 1 thru 7, 8, 15, 17 app 8.1; s2  large sample test for M: 18, 19, 22, 26, 35, app 8.3; s3 pvalues: 36, 39, 47; s4 small sample test for M: 59, 65; s5: large test for p: 73, 74, 76;
+skip sec 8.6; s7: test for variance: 104, 112, 126; supp: 132, 136, 138, 150, 151;
+12th ed: s1: 1 thru 7, 12, 17, 19, app 8.1; s2: 20, 21, 25, 28, 37, app 8.3; s3: 38, 41, 50; s4: 63, 67; s5: 77, 78, 80; skip s6; s7: 110, 118, 126; supp: 138, 144, 146, 158, 159.
+
+chpt 9: Inference for 2 populations: ci and hyp. 
+11th ed: s1 and 2: targets and 2 indpt samples M: 1, 5, 7, 9, 26; s3: paried diffs: 30, 31, 32, 33, 35, 47; s4 2 indpt samples p: 50, 51, 53, 65; s5 sample size: 77, 78; s6: 
+2 popl variances: 86, 87, 90, 91, 100; suppl: 107, 107, 113
+12th ed: s1 and 2: 1, 5, 7, 9, 28; s3: 30, 31, 32, 34, 35, 48; s4: 52, 56, 63, 65; s5: 77, 78; 26: 86, 87, 90, 91, 100; suppl: 106, 107, 113
+
+chpt 11: simple linear regression
+11th ed: s1 prob models: 1 thru 4, 9, 10; s2 least squares: 11, 13, 14, 15, app 11.1; s3 model assumptions: 32, 33, 38, 39, 41; s4: ci and tests on slope: 47, 48, 49, 50, 52, 61; 
+s5: correlation: 55, 67, 68, 69, 72a,app 11.2; s6 estimation/pred: 87, 88, 89, 90, 91, 97
+12th ed: s1: 1, 2, 3, 4, 9, 10; s2: 11, 12, 13, 14, 15, 20; s3: 32, 33, 40, 41; s4: 47 thru 50, 52, 61; s5: 66 thru 69, 71a, app 11.2; s6: 89, 90, 91, 92, 93, 99
+
+chpt 12: multiple regr and model bldg
+11th ed: s1,2,3: 1st order, slope, overall: 1 thru 6, 14; s4: R squred: 28, 29, 32; s5: interactions: 41, 44, 47; s6: quad and higher order: 50 51, 52, 54;s7: qual (dummy): 67, 68,69, 70;
+s8 qual and quant: 83, 84,85; s9: nested: 97, 98, 99, 100; skip sec 10 stepwise: s11 and 12117, 118, 119, 120, 121 thru 125.
+12th ed: s1, 2, 3: 1 thru 6, a6, s4: 29, 30, 35; s5: 41, 44, 47; s6: 56, 57, 58, 60; s7 75, 76, 77, 78; s8: 92, 93, 94: s9: 107, 108, 109, 110; skip s10 stepwise: s11 and 12: 130, 131, 132, 133, 134, 135, 136, 137, 138
+
+chpt 14 on diskette: s1: sign test:  1, 2, 6, 8;  indpt ranks: 16, 17, 18, 19, 20, 28;  spearman's corr: 76, 77, 78, 81

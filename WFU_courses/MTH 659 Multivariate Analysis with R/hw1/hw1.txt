@@ -1,0 +1,62 @@
+
+> fix(mm)
+> cov(mm)
+     col1 col2
+col1   10   -2
+col2   -2   10
+> fix(m)
+> cov(m)
+     col1 col2
+col1 10.0 -2.5
+col2 -2.5  8.2
+> cov(mm)
+     col1 col2
+col1   10   -2
+col2   -2   10
+> fix(m)
+> cov(m)
+     col1 col2
+col1   10   -2
+col2   -2   10
+
+> mean(m[,2])
+[1] 5
+> S<-cov(m)
+> S
+     col1 col2
+col1   10   -2
+col2   -2   10
+> S<-mtrix(0,2,2)
+Error: could not find function "mtrix"
+> S<-matrix(0,2,2)
+> S
+     [,1] [,2]
+[1,]    0    0
+[2,]    0    0
+> D<-matrix(0,2,2)
+> S<-cov(m)
+> D
+     [,1] [,2]
+[1,]    0    0
+[2,]    0    0
+> fix(D)
+> dist(m)
+         1        2        3        4
+2 8.944272                           
+3 8.062258 8.062258                  
+4 2.828427 6.324555 6.082763         
+5 7.211103 4.472136 3.605551 4.472136
+
+> qqnorm(,)
+Error in is.na(y) : 'y' is missing
+> qqnorm(m)
+> qqplot(m[,1],m[,2])
+> qqnorm(m)
+> qqplot(m[,1],m[,2])
+
+<environment: namespace:stats>
+> qqnorm(m)
+> qqnorm(m[,1])
+> ppoints(m[,1])
+
+> qqnorm(v)
