@@ -1,0 +1,870 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Project 3
+\end_layout
+
+\begin_layout Author
+Shuowen Wei
+\end_layout
+
+\begin_layout Part
+Theoretical 
+\end_layout
+
+\begin_layout Description
+Problem 20.1
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Rightarrow)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A\in\mathbb{C}^{m\times m}$
+\end_inset
+
+ is nonsingular, then 
+\begin_inset Formula $det(A)\neq0$
+\end_inset
+
+, by (20.1) we have 
+\begin_inset Formula $L_{m-1}...L_{2}L_{1}A=U$
+\end_inset
+
+ with each 
+\begin_inset Formula $L_{i}$
+\end_inset
+
+ is unit lower-triangular matrix and 
+\begin_inset Formula $U$
+\end_inset
+
+ is upper-triangular, then 
+\begin_inset Formula $det(L_{i})=1\neq0$
+\end_inset
+
+.
+ So
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0\neq det(A)=det(L_{1}^{-1})det(L_{2}^{-1})...det(L_{m-1}^{-1})det(U)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $det(U)\neq0$
+\end_inset
+
+, so 
+\begin_inset Formula $U$
+\end_inset
+
+ is nonsingular.
+\end_layout
+
+\begin_layout Standard
+Since the Gaussian elimination didn't change the determinants 
+\begin_inset Formula $det(A_{1:k,1:k})$
+\end_inset
+
+, thus for 
+\begin_inset Formula $1\leq k\leq m$
+\end_inset
+
+, 
+\begin_inset Formula $det(A_{1:k,1:k})=det(U_{1:k,1:k})$
+\end_inset
+
+, since 
+\begin_inset Formula $U$
+\end_inset
+
+ is upper-triangular and nonsingular, then every entries in the diagonal
+ of 
+\begin_inset Formula $U$
+\end_inset
+
+ is nonzero.
+ Then 
+\begin_inset Formula $det(A_{1:k,1:k})=det(U_{1:k,1:k})\neq0$
+\end_inset
+
+, thus every upper-left 
+\begin_inset Formula $k\times k$
+\end_inset
+
+ block 
+\begin_inset Formula $A_{1:k,1:k}$
+\end_inset
+
+ is nonsingular.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Leftarrow)$
+\end_inset
+
+ Since every upper-left 
+\begin_inset Formula $k\times k$
+\end_inset
+
+ block of 
+\begin_inset Formula $A$
+\end_inset
+
+ is nonsingular, then at every step of Gaussian elimination, after the row
+ operation it still leaves the matrix nonsingular, thus matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ has such a LU factorization.
+ 
+\end_layout
+
+\begin_layout Standard
+By the theorem on note of 15/11, since 
+\begin_inset Formula $A$
+\end_inset
+
+ is nonsingular and hence invertible, if we require that the diagonal of
+ 
+\begin_inset Formula $L$
+\end_inset
+
+ or 
+\begin_inset Formula $U$
+\end_inset
+
+ consists of ones, then the LU decomposition is unique.
+ 
+\end_layout
+
+\begin_layout Description
+Problem 20.3
+\end_layout
+
+\begin_layout Standard
+Solution:
+\end_layout
+
+\begin_layout Standard
+(a).
+ It is very obvious: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{cc}
+I & 0\\
+-A_{21}A_{11}^{-1} & I
+\end{array}\right]\left[\begin{array}{cc}
+A_{11} & A_{12}\\
+A_{21} & A_{22}
+\end{array}\right]=\left[\begin{array}{cc}
+IA_{11}+0A_{21} & IA_{12}+0A_{22}\\
+-A_{21}A_{11}^{-1}A_{11}+IA_{21} & -A_{21}A_{11}^{-1}A_{12}+A_{22}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+=\left[\begin{array}{cc}
+A_{11} & A_{12}\\
+ & A_{22}-A_{21}A_{11}^{-1}A_{12}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b).
+ Suppose 
+\begin_inset Formula $A_{21}=[\begin{array}{cccc}
+c_{1}, & ..., & c_{n-1}, & c_{n}\end{array}]$
+\end_inset
+
+ and each 
+\begin_inset Formula $c_{i}\in\mathbb{C}^{m-n}$
+\end_inset
+
+, then by n steps of Gaussian elimination, we have the 
+\begin_inset Formula $L_{1},\, L_{2},\,...L_{n}$
+\end_inset
+
+ as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{cc}
+I\\
+\left[0,...,-c_{n}\right]A_{11}^{-1} & I
+\end{array}\right]\left[\begin{array}{cc}
+I\\
+\left[0...,-c_{n-1},0\right]A_{11}^{-1} & I
+\end{array}\right]...\left[\begin{array}{cc}
+I\\
+\left[-c_{1},0...0\right]A_{11}^{-1} & I
+\end{array}\right]\left[\begin{array}{cc}
+A_{11} & A_{12}\\
+A_{21} & A_{22}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left[\begin{array}{cc}
+I\\
+\left[0,...,-c_{n}\right]A_{11}^{-1} & I
+\end{array}\right]...\left[\begin{array}{cc}
+I\\
+\left[0,-c_{2},0...0\right]A_{11}^{-1} & I
+\end{array}\right]\left[\begin{array}{cc}
+A_{11} & A_{12}\\
+\left[-c_{1},0...,0\right]+A_{21} & A_{22}-c_{1}A_{11}^{-1}A_{12}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+......
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left[\begin{array}{cc}
+A_{11} & A_{12}\\
+\left[-c_{1},-c_{2}...,-c_{n}\right]+A_{21} & A_{22}-(c_{1}+c_{2}...+c_{n})A_{11}^{-1}A_{12}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\left[\begin{array}{cc}
+A_{11} & A_{12}\\
+ & A_{22}-A_{21}A_{11}^{-1}A_{12}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus the bottom-right 
+\begin_inset Formula $(m-n)\times(m-n)$
+\end_inset
+
+ block of the result is again 
+\begin_inset Formula $A_{22}-A_{21}A_{11}^{-1}A_{12}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Description
+Problem 21.1
+\end_layout
+
+\begin_layout Standard
+Solution:
+\end_layout
+
+\begin_layout Standard
+(1).
+ Determine of 
+\begin_inset Formula $A$
+\end_inset
+
+ from (20.5) is 
+\begin_inset Formula $det(A)=det(L)det(U)$
+\end_inset
+
+, since 
+\begin_inset Formula $L$
+\end_inset
+
+ is a unit lower-triangular matrix and 
+\begin_inset Formula $U$
+\end_inset
+
+ is a upper-triangular matrix, thus 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+det(A)=1\cdot2\cdot1\cdot2\cdot2=8
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(2).
+ Determine of 
+\begin_inset Formula $A$
+\end_inset
+
+ from (20.5) is 
+\begin_inset Formula $det(PA)=deet(P)det(A)=det(L)det(U)$
+\end_inset
+
+, the same with (1) except we need to calculate 
+\begin_inset Formula $det(P)=-1$
+\end_inset
+
+, thus 
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+-1\cdot det(A)=1\cdot8\cdot\frac{7}{4}\cdot(-\frac{6}{7})\cdot\frac{2}{3}=-8
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then 
+\begin_inset Formula $det(A)=8$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(3).
+ Since interchanging two rows or columns will change the sign of the determinant
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+, then after Gaussian elimination with pivoting we get 
+\begin_inset Formula $PA=LU$
+\end_inset
+
+, since 
+\begin_inset Formula $det(L)=1$
+\end_inset
+
+ and 
+\begin_inset Formula $det(U)$
+\end_inset
+
+ is the product of its diagonal entries, and 
+\begin_inset Formula $det(P)=(-1^{n})$
+\end_inset
+
+ where 
+\begin_inset Formula $n$
+\end_inset
+
+ is the number of the times of interchanging two rows of matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ (partial pivoting), thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+det(A)=det(U)*(-1)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Problem 21.3
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+(a).
+ Since both row operation and column operation don't change the singularity
+ of the matrix, thus 
+\begin_inset Formula $AQ$
+\end_inset
+
+ is still nonsingular since 
+\begin_inset Formula $A$
+\end_inset
+
+ is nonsingluare, hence 
+\begin_inset Formula $AQ$
+\end_inset
+
+ is invertible, then by the Theorem on 15/11's note that an invertible matrix
+ admits a LU factorization, we know that such a factorization 
+\begin_inset Formula $AQ=LU$
+\end_inset
+
+ always exists.
+\end_layout
+
+\begin_layout Standard
+(b).
+ To show such a factorization does not always exist is to give an example.
+ Since 
+\begin_inset Formula $A$
+\end_inset
+
+ is singular, let 
+\begin_inset Formula $A=\left[\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 4 & 6\\
+7 & 8 & 9
+\end{array}\right]$
+\end_inset
+
+ and just let 
+\begin_inset Formula $Q=I$
+\end_inset
+
+, thus 
+\begin_inset Formula $L_{1}=\left[\begin{array}{ccc}
+1\\
+-2 & 1\\
+-7 &  & 1
+\end{array}\right]$
+\end_inset
+
+, then we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{1}AQ=\left[\begin{array}{ccc}
+1\\
+-2 & 1\\
+-7 &  & 1
+\end{array}\right]\left[\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 4 & 6\\
+7 & 8 & 9
+\end{array}\right]=\left[\begin{array}{ccc}
+1 & 2 & 3\\
+0 & 0 & 0\\
+0 & -6 & -12
+\end{array}\right]=U_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus a factorization does not always exist.
+ 
+\end_layout
+
+\begin_layout Description
+Problem 23.1
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+It is true that 
+\begin_inset Formula $R=U$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A$
+\end_inset
+
+ is nonsingular square matrix, then the SVD of 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset Formula $A=U\Sigma V^{*}$
+\end_inset
+
+, so 
+\begin_inset Formula $A^{*}A=V^{*}\Sigma^{2}V$
+\end_inset
+
+, whose eigenvalues are the diagonal entries of 
+\begin_inset Formula $\Sigma^{2}$
+\end_inset
+
+, i.e.
+ positive, and since 
+\begin_inset Formula $(A^{*}A)^{*}=A^{*}A$
+\end_inset
+
+, then 
+\begin_inset Formula $A^{*}A$
+\end_inset
+
+ is hermitian positive definite.
+ 
+\end_layout
+
+\begin_layout Standard
+By the QR factorization of 
+\begin_inset Formula $A$
+\end_inset
+
+ that 
+\begin_inset Formula $A=QR$
+\end_inset
+
+ where 
+\begin_inset Formula $Q$
+\end_inset
+
+ is unitray, then 
+\begin_inset Formula $A^{*}A=R^{*}Q^{*}QR=R^{*}R$
+\end_inset
+
+, since 
+\begin_inset Formula $r_{jj}>0$
+\end_inset
+
+, then such a 
+\begin_inset Formula $QR$
+\end_inset
+
+ factorization is unique, and 
+\begin_inset Formula $R$
+\end_inset
+
+ is upper triangular matrix.
+ 
+\end_layout
+
+\begin_layout Standard
+While 
+\begin_inset Formula $A^{*}A$
+\end_inset
+
+ has Cholesky Factorization 
+\begin_inset Formula $A^{*}A=U^{*}U$
+\end_inset
+
+ with 
+\begin_inset Formula $u_{jj}>0$
+\end_inset
+
+, by 
+\series bold
+Theorem 23.1
+\series default
+ that, every hermitian positive definite matrix has a unique Cholesky Factorizat
+ion, thus 
+\begin_inset Formula $R=U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part
+Numerical Experiments
+\end_layout
+
+\begin_layout Description
+1.
+\end_layout
+
+\begin_layout Standard
+Please run the m-file: 
+\series bold
+data.m
+\end_layout
+
+\begin_layout Standard
+Gaussian elimination without pivoting: 
+\series bold
+nplu.m
+\end_layout
+
+\begin_layout Standard
+Gaussian elimination with partial pivoting: 
+\series bold
+plu.m
+\series default
+ (with 
+\series bold
+maxposition.m 
+\series default
+and 
+\series bold
+interchange.m
+\series default
+)
+\end_layout
+
+\begin_layout Description
+23.3
+\end_layout
+
+\begin_layout Standard
+
+\series medium
+Answer:
+\end_layout
+
+\begin_layout Standard
+(1).
+ The purpose of carrying out this experiment is to compare the computation
+ time of using 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\setminus$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ to solve 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ when given different input matrix 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ The computation time actually reflects the steps of each part because they
+ are all under the same computer machine, we can see that it varies depends
+ on the condition of given matrix 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(2).
+ After checking 
+\begin_inset Quotes eld
+\end_inset
+
+help chol
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+help slash
+\begin_inset Quotes erd
+\end_inset
+
+ in MATLAB, we see that the 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\setminus$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ is better than inv and better than gaussian elimination.
+ Also, it was much more faster because it consumes less steps.
+ 
+\end_layout
+
+\begin_layout Standard
+We guess that for hermitian positive definite matrix of each part, 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\setminus$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ prefer to use Cholesky decomposition to get the inverse of matrix 
+\begin_inset Formula $A$
+\end_inset
+
+, the result shows that it costs the least steps to compute the inverse
+ of matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ in (f) because 
+\begin_inset Formula $A5$
+\end_inset
+
+ itself is upper triangular matrix; and it costs much more time than others
+ in (e) because it is not positive definite; and it costs much time in (c)
+ and (g) because they are nor hermitian any more; for (a) (b) and (d), it's
+ OK because they are just changes a little in their entries.
+ 
+\end_layout
+
+\end_body
+\end_document

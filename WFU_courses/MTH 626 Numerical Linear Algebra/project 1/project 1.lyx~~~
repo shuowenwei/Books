@@ -1,0 +1,2295 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Project One
+\end_layout
+
+\begin_layout Author
+Shuowen Wei
+\end_layout
+
+\begin_layout Part
+Theoretical Part
+\end_layout
+
+\begin_layout Description
+Problem 3.1
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+Obviously, since 
+\begin_inset Formula $W$
+\end_inset
+
+ is a matrix, then 
+\begin_inset Formula $Wx$
+\end_inset
+
+ is also a vector, so 
+\begin_inset Formula $\forall\, vector\, x,\,||x||_{W}=||Wx||\geq0$
+\end_inset
+
+, and if 
+\begin_inset Formula $x=0,\,||x||_{W}=||Wx||=0$
+\end_inset
+
+.
+ And if 
+\begin_inset Formula $||x||_{W}=||Wx||=0$
+\end_inset
+
+, then 
+\begin_inset Formula $Wx=0$
+\end_inset
+
+ by the definition of 
+\begin_inset Formula $||\centerdot||$
+\end_inset
+
+, because 
+\begin_inset Formula $W$
+\end_inset
+
+ is arbitrary nonsingular matrix, which means all of row vectors are linear
+ indenpendent, hence 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $||x||_{W}=0$
+\end_inset
+
+ if only and if 
+\begin_inset Formula $x=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+Secondly, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\forall\, vector\, x\: and\, y,\,||x+y||_{W}=||W(x+y)||=||Wx+Wy||\leq||Wx||+||Wy||=||x||_{W}+||y||_{W}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Thirdly, for any scalar 
+\begin_inset Formula $\alpha\in\mathbb{C}$
+\end_inset
+
+, 
+\begin_inset Formula $||\alpha x||_{W}=||W(\alpha x)||=||\alpha Wx||=\alpha||Wx||=\alpha||x||_{W}$
+\end_inset
+
+.
+ Thus, 
+\begin_inset Formula $||\centerdot||_{W}$
+\end_inset
+
+ is vector norm.
+\end_layout
+
+\begin_layout Description
+Problem 3.2
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ denote arbitrary eigenvalue of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $x$
+\end_inset
+
+ is the corresponding eigenvector, then we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Ax=\lambda x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+get norm of both sides, so 
+\begin_inset Formula 
+\[
+||Ax||=||\lambda x||=|\lambda|||x||
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By the definition of induced matrix norm
+\begin_inset Formula 
+\[
+||A||=sup_{x\neq0}\frac{||Ax||}{||x||}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|\lambda|\,||x||=||Ax||\leq||A||\,||x||
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $|\lambda|\leq||A||$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is arbitrary eigenvalue of 
+\begin_inset Formula $A$
+\end_inset
+
+, so 
+\begin_inset Formula $\rho(x)\leq||A||$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Problem 3.6
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+(a).
+\end_layout
+
+\begin_layout Standard
+Obviously, for any vector 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $||x||'=sup_{||y||=1}|y^{*}x|\geq0$
+\end_inset
+
+, and if 
+\begin_inset Formula $x=0,\,||x||'=sup_{||y||=1}|y^{*}0|=0$
+\end_inset
+
+.
+ And when 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $||x||'=sup_{||y||=1}|y^{*}x|=0$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+0=sup_{||y||=1}|y^{*}x|=sup_{||y||=1}||x||\,||y||\,|\cos(\theta)|
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\cos(\theta)=\frac{y^{*}x}{||x||\,||y||}$
+\end_inset
+
+, so 
+\begin_inset Formula $0=sup_{||y||=1}||x||\,||y||\,|\cos(\theta)|=||x||$
+\end_inset
+
+, (because 
+\begin_inset Formula $||y||=1$
+\end_inset
+
+and 
+\begin_inset Formula $sup\cos(\theta)=1$
+\end_inset
+
+), so 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $||x||'=0$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $x=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+Secondly, for any two vector 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $z$
+\end_inset
+
+, 
+\begin_inset Formula $||x+z||'=sup_{||y||=1}|y^{*}(x+z)|=sup_{||y||=1}|y^{*}x+y^{*}z|\leq sup_{||y||=1}|y^{*}x|+sup_{||y||=1}|y^{*}z|=||x||'+||z||'$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Thirdly, for any scalar 
+\begin_inset Formula $\alpha\in\mathbb{C}$
+\end_inset
+
+, 
+\begin_inset Formula $||\alpha x||'=sup_{||y||=1}|y^{*}(\alpha x)|=|\alpha|\, sup_{||y||=1}|y^{*}x|=|\alpha|\,||x||'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Hence, 
+\begin_inset Formula $||\centerdot||'$
+\end_inset
+
+ is a norm.
+\end_layout
+
+\begin_layout Standard
+(b).
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $x,\, y$
+\end_inset
+
+ is give with 
+\begin_inset Formula $||x||=||y||=1,$
+\end_inset
+
+ then to show there exits a rank one 
+\begin_inset Formula $B=yz^{*}$
+\end_inset
+
+ such that 
+\begin_inset Formula $Bx=y$
+\end_inset
+
+ and 
+\begin_inset Formula $||B||=1$
+\end_inset
+
+is to show there is such a vector 
+\begin_inset Formula $z^{*}$
+\end_inset
+
+ satisfies 
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $Bx=y\,\Longleftrightarrow\, Bx-y=0$
+\end_inset
+
+, then 
+\begin_inset Formula $||Bx-y||=0=||yz^{*}x-y||=||y(z^{*}x-1)||$
+\end_inset
+
+ sinc e 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $z^{*}x$
+\end_inset
+
+ is scalar here, and 
+\begin_inset Formula $||y||=1$
+\end_inset
+
+ by given, so 
+\begin_inset Formula $|z^{*}x-1|=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+By the lemma, for any 
+\begin_inset Formula $x$
+\end_inset
+
+, there exits a nonzero 
+\begin_inset Formula $z$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $|z^{*}x|=||z||'||x||$
+\end_inset
+
+, then for the given 
+\begin_inset Formula $x$
+\end_inset
+
+, we have 
+\begin_inset Formula $\frac{|z^{*}x|}{||z||'}-1=0$
+\end_inset
+
+, to get rid of the absolute value sign, we let
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z_{o}=sign(z^{*}x)\frac{z}{||z||'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then this 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $z_{o}$
+\end_inset
+
+ statisfies 
+\begin_inset Formula $Bx=y$
+\end_inset
+
+, and it is easy verify that 
+\begin_inset Formula $||B||=\underset{||x||=1}{sup}||Bx||=\underset{||x||=1}{sup}||y||=1$
+\end_inset
+
+.
+ Besides, since both 
+\begin_inset Formula $y,\, z_{o}\in\mathbb{C}^{m}$
+\end_inset
+
+, then 
+\begin_inset Formula $B=yz_{o}^{*}$
+\end_inset
+
+ is always a rank-one matrix, because all the row vectors of the matrix
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ are linear dependent, i.e.
+ for any 
+\begin_inset Formula $i\neq j,\,1\leq i,\, j\leq m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\overrightarrow{b_{i}}}{\overrightarrow{b_{j}}}=\frac{y_{i}}{y_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\overrightarrow{b_{i}}\overrightarrow{,\, b_{i}}$
+\end_inset
+
+ are two distinct row vectors of 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{i},\, y_{j}$
+\end_inset
+
+ are the corresponding entries of 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Problem 5.3
+\end_layout
+
+\begin_layout Standard
+Solotion:
+\end_layout
+
+\begin_layout Standard
+(a).
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A=\left[\begin{array}{cc}
+-2 & 11\\
+-10 & 5
+\end{array}\right]$
+\end_inset
+
+, then we denot 
+\begin_inset Formula $M\triangleq A^{*}A$
+\end_inset
+
+, then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=\left[\begin{array}{cc}
+-2 & -10\\
+11 & 5
+\end{array}\right]\left[\begin{array}{cc}
+-2 & 11\\
+-10 & 5
+\end{array}\right]=\left[\begin{array}{cc}
+104 & -72\\
+-72 & 146
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+it is easy to compute the eigenvalues 
+\begin_inset Formula $\lambda_{1},\,\lambda_{2}$
+\end_inset
+
+ of 
+\begin_inset Formula $M$
+\end_inset
+
+ by 
+\begin_inset Formula $|M-\lambda I|=0\Rightarrow(\lambda_{1}-200)(\lambda_{2}-50)=0$
+\end_inset
+
+, thus 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\lambda_{1}=200>\lambda_{2}=50$
+\end_inset
+
+.
+ So the singular values in 
+\begin_inset Formula $\Sigma=\left[\begin{array}{cc}
+\sigma_{1} & 0\\
+0 & \sigma_{2}
+\end{array}\right]$
+\end_inset
+
+ are 
+\begin_inset Formula $\sigma_{1=}\sqrt{200}=14.1421$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{2}=\sqrt{50}=7.0711$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now we compute 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $M$
+\end_inset
+
+, find the corresponding eigenvectors of its eigenvalues 
+\begin_inset Formula $\lambda_{1},\,\lambda_{2}$
+\end_inset
+
+, we denote them as 
+\begin_inset Formula $X=\left[x_{1},\, x_{2}\right]^{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y=\left[y_{1},\, y_{2}\right]^{T}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(M-\lambda_{1}I)\, X=0\Rightarrow\left[\begin{array}{cc}
+104-200 & -72\\
+-72 & 146-200
+\end{array}\right]\left[\begin{array}{c}
+x_{1}\\
+x_{2}
+\end{array}\right]=0\Rightarrow x_{1}=-\frac{3}{4}x_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $x_{1}^{2}+x_{2}^{2}=1,$
+\end_inset
+
+ then 
+\begin_inset Formula $x_{1}=0.6,\, x_{2}=-0.8$
+\end_inset
+
+.
+ Similarly, we can get 
+\begin_inset Formula $Y=\left[\begin{array}{cc}
+0.8 & 0.6\end{array}\right]^{T}$
+\end_inset
+
+.(Under the request that 
+\begin_inset Formula $V$
+\end_inset
+
+ has the minimal number of signs)
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula 
+\[
+V=\left[\begin{array}{cc}
+X & Y\end{array}\right]=\left[\begin{array}{cc}
+0.6 & 0.8\\
+-0.8 & 0.6
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we compute 
+\begin_inset Formula $U$
+\end_inset
+
+ by 
+\begin_inset Formula $U=A(V^{*})^{-1}\Sigma^{-1}=AV\Sigma^{-1}=\left[\begin{array}{cc}
+-2 & 11\\
+-10 & 5
+\end{array}\right]\left[\begin{array}{cc}
+0.6 & 0.8\\
+-0.8 & 0.6
+\end{array}\right]\left[\begin{array}{cc}
+14.1421 & 0\\
+0 & 7.0711
+\end{array}\right]^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus 
+\begin_inset Formula $U=\left[\begin{array}{cc}
+-0.7071 & 0.7071\\
+-0.7071 & -0.7071
+\end{array}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b).
+\end_layout
+
+\begin_layout Standard
+Please m-file: 
+\series bold
+5.3 .m
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+The nonsingular values: 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\Sigma=\left[\begin{array}{cc}
+14.1421 & 0\\
+0 & 7.0711
+\end{array}\right]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+The left nonsingular vectors 
+\begin_inset Formula $u_{1},\, u_{2}$
+\end_inset
+
+ are: 
+\begin_inset Formula $U=\left[u_{1}|u_{2}\right]=\left[\begin{array}{cc}
+-0.7071 & 0.7071\\
+-0.7071 & -0.7071
+\end{array}\right]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+The right nonsingular vectors 
+\begin_inset Formula $v_{1},\, v_{2}$
+\end_inset
+
+ are: 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $V=\left[v_{1}|v_{2}\right]=\left[\begin{array}{cc}
+0.6 & 0.8\\
+-0.8 & 0.6
+\end{array}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 5.3.jpg
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(c).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $||A||_{1}=16$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $||A||_{2}=\sqrt{\rho(A^{T}A)}=\sqrt{200}=14.1421$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $||A||_{\infty}=15$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(d).
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A=U\Sigma V^{*}$
+\end_inset
+
+, then 
+\begin_inset Formula $(A)^{-1}=(U\Sigma V^{*})^{-1}=(V^{*})^{-1}\Sigma^{-1}U^{-1}=V\Sigma^{-1}U^{*}$
+\end_inset
+
+, then 
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+A=\left[\begin{array}{cc}
+0.6 & 0.8\\
+-0.8 & 0.6
+\end{array}\right]\left[\begin{array}{cc}
+\nicefrac{1}{\sqrt{200}} & 0\\
+0 & \nicefrac{1}{\sqrt{50}}
+\end{array}\right]\left[\begin{array}{cc}
+-0.7071 & -0.7071\\
+0.7071 & -0.7071
+\end{array}\right]=\left[\begin{array}{cc}
+0.05 & -0.11\\
+0.1 & -0.02
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(e).
+\end_layout
+
+\begin_layout Standard
+Denote 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ be the eigenvalues of matrix 
+\begin_inset Formula $A$
+\end_inset
+
+, then let 
+\begin_inset Formula $|A-\lambda I|=0\Rightarrow|\begin{array}{cc}
+-2-\lambda & 11\\
+-10 & 5-\lambda
+\end{array}|=0\Rightarrow(\lambda-5)(\lambda+2)+100=0$
+\end_inset
+
+, then solve the equation, the roots are the eigenvalues of 
+\begin_inset Formula $A$
+\end_inset
+
+ : 
+\begin_inset Formula $\lambda_{1,2}=\frac{3\pm\sqrt{-391}}{2}=1.5\pm9.8869i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(f).
+\end_layout
+
+\begin_layout Standard
+Eigenvalues of 
+\begin_inset Formula $A$
+\end_inset
+
+ are 
+\begin_inset Formula $\lambda_{1,2}=\frac{3\pm\sqrt{-391}}{2}=1.5\pm9.8869i$
+\end_inset
+
+, so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda\lambda_{2}=\frac{3+\sqrt{-391}}{2}\cdot\frac{3-\sqrt{-391}}{2}=100
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+while
+\begin_inset Formula $det(A)=-2\times5-(-10)\times11=100$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+det(A)=\lambda_{1}\lambda_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And 
+\begin_inset Formula $|det(A)|=100,$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{1}\sigma_{2}=\sqrt{200}\sqrt{50}=100$
+\end_inset
+
+, so
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $|det(A)|=\sigma_{1}\sigma_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(g).
+\end_layout
+
+\begin_layout Standard
+The length of the long axis is 
+\begin_inset Formula $||\sigma_{1}u_{1}||_{2}=10\sqrt{2}$
+\end_inset
+
+ and the length of the short axis is 
+\begin_inset Formula $||\sigma_{2}u_{2}||_{2}=5\sqrt{2}$
+\end_inset
+
+, so the eare is 
+\begin_inset Formula $S=\pi ab=100\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Problem 5.4
+\end_layout
+
+\begin_layout Standard
+Solution:
+\end_layout
+
+\begin_layout Standard
+Suppose the eigenvalues of the hermitian matrix 
+\begin_inset Formula $M=\left[\begin{array}{cc}
+0 & A^{*}\\
+A & 0
+\end{array}\right]_{2m\times2m}$
+\end_inset
+
+ in block form are 
+\begin_inset Formula $\lambda_{i}=\left[\begin{array}{cccc}
+\lambda_{(i-1)m+1} & 0 & \cdots & 0\\
+0 & \lambda_{(i-1)m+2} & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & \lambda_{(i-1)m+m}
+\end{array}\right]_{m\times m},\, i=1,2$
+\end_inset
+
+, and denote 
+\begin_inset Formula $X=\left[\begin{array}{cc}
+a & b\\
+c & d
+\end{array}\right]_{2m\times2m}$
+\end_inset
+
+ be the corresponding eigenmatrix of the eigenvalues matrix of 
+\begin_inset Formula $\Lambda=\left[\begin{array}{cc}
+\lambda_{1} & 0\\
+0 & \lambda_{2}
+\end{array}\right]$
+\end_inset
+
+, where 
+\begin_inset Formula $a,\, b,\, c\, d$
+\end_inset
+
+ are all 
+\begin_inset Formula $m\times m$
+\end_inset
+
+ block matrix, then the eigenvalue decomposition of 
+\begin_inset Formula $M$
+\end_inset
+
+ is 
+\begin_inset Formula $M=X\Lambda X^{-1}$
+\end_inset
+
+.
+ So our goal is to find such 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ and its corresponding 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $M$
+\end_inset
+
+ is hermitian matrix, then by Theorem 5.5, the eigenvalues of 
+\begin_inset Formula $M$
+\end_inset
+
+ are real and the eigenmatrixs are unitary, which implies 
+\begin_inset Formula $X^{-1}=X^{*},$
+\end_inset
+
+ so 
+\begin_inset Formula $M=X\Lambda X^{*}$
+\end_inset
+
+.
+ To find 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+, we compute the roots of 
+\begin_inset Formula $det(M-\Lambda I)=0=det(\left[\begin{array}{cc}
+-\lambda & A^{*}\\
+A & -\lambda
+\end{array}\right])\Rightarrow\lambda^{2}=\Sigma^{2}$
+\end_inset
+
+, so 
+\begin_inset Formula $\lambda_{1}=\Sigma\: and\,\lambda_{2}=-\Sigma$
+\end_inset
+
+ since 
+\begin_inset Formula $\lambda_{1},\,\lambda_{2}$
+\end_inset
+
+ are both real.
+ 
+\end_layout
+
+\begin_layout Standard
+Next, we try to find 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ We compute 
+\begin_inset Formula $MM$
+\end_inset
+
+ separately.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Since 
+\begin_inset Formula $U,\, V$
+\end_inset
+
+ are unitary
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, so in one way, we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+MM=\left[\begin{array}{cc}
+0 & A^{*}\\
+A & 0
+\end{array}\right]\left[\begin{array}{cc}
+0 & A^{*}\\
+A & 0
+\end{array}\right]=\left[\begin{array}{cc}
+A^{*}A & 0\\
+0 & AA^{*}
+\end{array}\right]=\left[\begin{array}{cc}
+V\Sigma^{2}V^{*} & 0\\
+0 & U\Sigma{}^{2}U*
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the other way, since 
+\begin_inset Formula $X$
+\end_inset
+
+ is also unitary, so we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+MM=(X\Lambda X^{*})(X\Lambda X^{*})=X\Lambda^{2}X^{*}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=\left[\begin{array}{cc}
+a & b\\
+c & d
+\end{array}\right]\left[\begin{array}{cc}
+\lambda_{1}^{2} & 0\\
+0 & \lambda_{2}^{2}
+\end{array}\right]\left[\begin{array}{cc}
+a^{*} & c^{*}\\
+b^{*} & d^{*}
+\end{array}\right]=\left[\begin{array}{cc}
+a\Sigma^{2}a^{*}+b\Sigma^{2}b^{*} & a\Sigma^{2}c^{*}+b\Sigma^{2}d^{*}\\
+c\Sigma^{2}a^{*}+d\Sigma^{2}b^{*} & c\Sigma^{2}c^{*}+d\Sigma^{2}d^{*}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\left[\begin{array}{cc}
+V\Sigma^{2}V^{*} & 0\\
+0 & U\Sigma{}^{2}U*
+\end{array}\right]=\left[\begin{array}{cc}
+a\Sigma^{2}a^{*}+b\Sigma^{2}b^{*} & a\Sigma^{2}c^{*}+b\Sigma^{2}d^{*}\\
+c\Sigma^{2}a^{*}+d\Sigma^{2}b^{*} & c\Sigma^{2}c^{*}+d\Sigma^{2}d^{*}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow a\Sigma^{2}a^{*}+b\Sigma^{2}b^{*}=V\Sigma^{2}V^{*},\, a\Sigma^{2}c^{*}+b\Sigma^{2}d^{*}=0,\, c\Sigma^{2}a^{*}+d\Sigma^{2}b^{*}=0,\, c\Sigma^{2}c^{*}+d\Sigma^{2}d^{*}=U\Sigma{}^{2}U*$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $X$
+\end_inset
+
+ is also a unitary matrix, which means 
+\begin_inset Formula $\left[\begin{array}{cc}
+a & c\end{array}\right]^{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $\left[\begin{array}{cc}
+b & d\end{array}\right]^{T}$
+\end_inset
+
+ are mutually orthogonal and their norms should be 1.
+ So we find :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+X=\left[\begin{array}{cc}
+\frac{\sqrt{2}}{2}V & \frac{\sqrt{2}}{2}V\\
+\frac{\sqrt{2}}{2}U & -\frac{\sqrt{2}}{2}U
+\end{array}\right]=\frac{\sqrt{2}}{2}\left[\begin{array}{cc}
+V & V\\
+U & -U
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus we get 
+\begin_inset Formula $M=X\Lambda X^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Problem 6.3
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A\in\mathbb{C}^{m\times n}$
+\end_inset
+
+ is not a square matrix (suppose 
+\begin_inset Formula $m>n$
+\end_inset
+
+), so we use the reduced singular value decomposition (SVD) of 
+\begin_inset Formula $A$
+\end_inset
+
+, which is 
+\begin_inset Formula $A=\hat{U}\hat{\Sigma}V^{*}$
+\end_inset
+
+ where 
+\begin_inset Formula $\hat{U}\in\mathbb{C}^{m\times n}$
+\end_inset
+
+ and 
+\begin_inset Formula $V\in\mathbb{C}^{n\times n}$
+\end_inset
+
+ are both unitary and 
+\begin_inset Formula $\hat{\Sigma}\in\mathbb{R}^{n\times n}$
+\end_inset
+
+ is diagonal.
+ Then 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A^{*}A=(U\hat{\Sigma}V^{*})^{*}(U\hat{\Sigma}V^{*})=V\hat{\Sigma}^{2}V^{*}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\left(\Leftarrow\right):$
+\end_inset
+
+ If 
+\begin_inset Formula $A^{*}A$
+\end_inset
+
+ is nonsingular, then 
+\begin_inset Formula $det(A^{*}A)=det(V\hat{\Sigma}^{2}V^{*})=det(Vdet(\hat{\Sigma}^{2})det(V^{*})=det(\hat{\Sigma}^{2})\neq0$
+\end_inset
+
+, then all the n entries of 
+\begin_inset Formula $\hat{\Sigma}$
+\end_inset
+
+ are nonzero, which implies all of the n singular values of
+\begin_inset Formula $A$
+\end_inset
+
+ are nonzero, then
+\begin_inset Formula $A$
+\end_inset
+
+ is full rank.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\Rightarrow\right):$
+\end_inset
+
+Since 
+\begin_inset Formula $A$
+\end_inset
+
+ is full rank, then 
+\begin_inset Formula $A$
+\end_inset
+
+ has n nonzero singular values, then 
+\begin_inset Formula $det(A^{*}A)=det(\hat{\Sigma}^{2})\neq0$
+\end_inset
+
+, so 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $A^{*}A$
+\end_inset
+
+ is nonsingular.
+ 
+\end_layout
+
+\begin_layout Description
+Problem 7.5
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+(a).
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\left(\Rightarrow\right):$
+\end_inset
+
+ Since 
+\begin_inset Formula $A$
+\end_inset
+
+ has rank 
+\begin_inset Formula $n$
+\end_inset
+
+, then 
+\begin_inset Formula $A$
+\end_inset
+
+ is rull rank, so by Theorem 7.2 we can easily conclu
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+de that the diagonal entries of 
+\begin_inset Formula $\hat{R}$
+\end_inset
+
+ are nonzero (positive).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\Leftarrow\right):$
+\end_inset
+
+ From the Gram-Schmidt iteration, 
+\begin_inset Formula $\left(7.8\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $(7.6)$
+\end_inset
+
+, we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|r_{jj}|=\Vert a_{j}-\Sigma_{i=1}^{j-1}{\displaystyle r_{ij}q_{i}}\Vert
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+q_{i}=\frac{a_{i}-\Sigma_{k=1}^{i-1}{\displaystyle r_{ki}q_{k}}}{r_{ii}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If all diagonal entries 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $r_{jj}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ of 
+\begin_inset Formula $\hat{R}$
+\end_inset
+
+ are nonzero, then for any 
+\begin_inset Formula $j=1,\,2,\,3...\, n$
+\end_inset
+
+, 
+\begin_inset Formula $\Vert a_{j}-\Sigma_{i=1}^{j-1}{\displaystyle r_{ij}q_{i}}\Vert\neq0$
+\end_inset
+
+, which implies that 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ cannot be written as the compositon of 
+\begin_inset Formula $q_{1},\, q_{2},\,...q_{j-1}$
+\end_inset
+
+, and because each 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ can be written as composition of 
+\begin_inset Formula $a_{1},\, a_{2},\,...a_{i}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, let 
+\begin_inset Formula $i=j-1$
+\end_inset
+
+, then 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ cannot be written as the compositon of 
+\begin_inset Formula $a_{1},\, a_{2},\,...a_{j-1}$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ is linear independent with 
+\begin_inset Formula $a_{1},\, a_{2},\,...a_{j-1}$
+\end_inset
+
+, thus all the n column vectors 
+\begin_inset Formula $a_{1},\, a_{2},\,...a_{n}$
+\end_inset
+
+of 
+\begin_inset Formula $A$
+\end_inset
+
+ are mutually linear independent.
+ Thus 
+\begin_inset Formula $A$
+\end_inset
+
+ has full rank.
+\end_layout
+
+\begin_layout Standard
+(b).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{R}$
+\end_inset
+
+ has 
+\begin_inset Formula $k$
+\end_inset
+
+ nonzero diagonal entries, then the rank of 
+\begin_inset Formula $A$
+\end_inset
+
+ is exactly 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This follows from the 
+\begin_inset Formula $\left(\Leftarrow\right)$
+\end_inset
+
+ of part (a).
+ Suppose that only 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $r_{11},\, r_{22},\,...r_{kk}$
+\end_inset
+
+ are nonzero.
+ Then we can find, similar to part (a), at least 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $a_{1},\, a_{2},\,...a_{k}$
+\end_inset
+
+ are mutually linear independent.
+ Now we consider 
+\begin_inset Formula $a_{k+1}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Since
+\begin_inset Formula $r_{k+1,k+1}=0,$
+\end_inset
+
+and 
+\begin_inset Formula $|r_{k+1,k+1}|=\Vert a_{k+1}-\Sigma_{i=1}^{k}{\displaystyle r_{i,k+1}q_{i}}\Vert=0$
+\end_inset
+
+, so 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula 
+\[
+a_{k+1}=\Sigma_{i=1}^{k}{\displaystyle r_{i,k+1}q_{i}}
+\]
+
+\end_inset
+
+ where 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $q_{i}=\frac{a_{i}-\Sigma_{k=1}^{i-1}{\displaystyle r_{ki}q_{k}}}{r_{ii}}$
+\end_inset
+
+, since
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ every 
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ can be written as composition of 
+\begin_inset Formula $a_{1},\, a_{2},\,...a_{i}$
+\end_inset
+
+, so let 
+\begin_inset Formula $i=k$
+\end_inset
+
+, then 
+\begin_inset Formula $a_{k+1}$
+\end_inset
+
+ can be written as the composition of 
+\begin_inset Formula $a_{1},\, a_{2},\,...a_{k}$
+\end_inset
+
+, thus
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+a_{i}\in<a_{1},\, a_{2},\,...a_{k}>\, for\, k+1\leq i\leq n
+\]
+
+\end_inset
+
+Thus 
+\begin_inset Formula $A$
+\end_inset
+
+ has exactly rank 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+2.
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A\in\mathbb{C}^{m\times n}$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in\mathbb{C}^{m}$
+\end_inset
+
+, so 
+\begin_inset Formula $b\notin range(A)$
+\end_inset
+
+, thus this rectangular system of equations is overdetermined.
+ Denote 
+\begin_inset Formula $r=b-Ax$
+\end_inset
+
+ called the residual, then by Theorem 11.1 a vector 
+\begin_inset Formula $x$
+\end_inset
+
+ minimizes the residual norm 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $||r||_{2}=||b-Ax||_{2}$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $r\perp range(A)$
+\end_inset
+
+, that is 
+\begin_inset Formula $A^{*}r=0$
+\end_inset
+
+.
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+Thus 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $A^{*}r=0\,\Leftrightarrow\, A^{*}Ax=A^{*}b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Let's compute 
+\begin_inset Formula $x$
+\end_inset
+
+ now.
+ In proof of 
+\series bold
+problem 6.3 
+\series default
+(see above), we have already proved that if 
+\begin_inset Formula $A$
+\end_inset
+
+ has full rank, then 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $A^{*}A$
+\end_inset
+
+ is nonsingular, thus 
+\begin_inset Formula $A^{*}A$
+\end_inset
+
+ 's inverse exits.
+ By the given reduced SVD of 
+\begin_inset Formula $A=\hat{U}\hat{\Sigma}\hat{V}^{*}$
+\end_inset
+
+, then we find 
+\begin_inset Formula $x$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=(A^{*}A)^{-1}A^{*}b=(\hat{V}\Sigma\hat{U}^{*}\hat{U}\hat{\Sigma}\hat{V}^{*})^{-1}(\hat{U}\hat{\Sigma}\hat{V}^{*})^{*}b=\hat{V}\Sigma^{-2}\hat{V}^{*}\hat{V}\Sigma\hat{U}^{*}b=\hat{V}\Sigma^{-1}\hat{U}^{*}b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus
+\end_layout
+
+\begin_layout Part
+Numerical Experiments
+\end_layout
+
+\begin_layout Description
+1.
+\end_layout
+
+\begin_layout Standard
+Please see the m-file: 
+\series bold
+Q1 of coding part.m
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Just copy the whole code and run it, we will get as follows:
+\end_layout
+
+\begin_layout Standard
+*****to verify the unitary of Qs from clgs and msg ***** 
+\end_layout
+
+\begin_layout Standard
+--All of column vectors are unit in Qs from clgs 
+\end_layout
+
+\begin_layout Standard
+******************************************* 
+\end_layout
+
+\begin_layout Standard
+--All of column vectors are unit in Qs from mgs 
+\end_layout
+
+\begin_layout Standard
+******************************************* 
+\end_layout
+
+\begin_layout Standard
+*****to verify the orthogonality of Qs from clgs and msg ***** 
+\end_layout
+
+\begin_layout Standard
+1.Qs from clgs are not orthogonal 
+\end_layout
+
+\begin_layout Standard
+it is not orthogonal when e = 1.000000e-008
+\end_layout
+
+\begin_layout Standard
+the inner product of the two nonorthogonal vector is 5.000000e-001, which
+ is far away from 0 
+\end_layout
+
+\begin_layout Standard
+2.Qs from mgs are orthogonal 
+\end_layout
+
+\begin_layout Standard
+The observations are cited insides the gragh below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename photo of code part Q1.jpg
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Conclusion: Classical G-S algorithm is not stable when the matrix contains
+ some tiny values, that's to say the matrix is ill conditioned.
+ While Modified G-S algorithm is more stable.
+ 
+\end_layout
+
+\begin_layout Description
+Problem 10.2
+\end_layout
+
+\begin_layout Standard
+Please see the m-files: 
+\series bold
+house.m
+\series default
+ and 
+\series bold
+formQ.m
+\end_layout
+
+\begin_layout Standard
+Actually, the 
+\begin_inset Formula $R$
+\end_inset
+
+ we get from house.m is m-by-n matrix.
+ 
+\end_layout
+
+\begin_layout Description
+Problem 10.3
+\end_layout
+
+\begin_layout Standard
+Please see the m-file: 
+\series bold
+10.3.m
+\end_layout
+
+\begin_layout Standard
+Differences: 
+\end_layout
+
+\begin_layout Standard
+1.
+ The diagonal entries of 
+\begin_inset Formula $R1$
+\end_inset
+
+ by 
+\series bold
+mgs
+\series default
+ are all positive, but the diagonal entries of 
+\begin_inset Formula $R2$
+\end_inset
+
+ and 
+\begin_inset Formula $R3$
+\end_inset
+
+ exist some negative ones.
+ 
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $R2$
+\end_inset
+
+ has the same column and row numbers as 
+\begin_inset Formula $Z$
+\end_inset
+
+ because householder projections are just kind of row operations, they don't
+ change the shape of the original matrix.
+ While 
+\begin_inset Formula $R1$
+\end_inset
+
+ and 
+\begin_inset Formula $R3$
+\end_inset
+
+'s column and rom numbers are same with each other but not the same with
+ 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

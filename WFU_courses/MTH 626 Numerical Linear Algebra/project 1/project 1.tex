@@ -1,0 +1,571 @@
+%% LyX 2.0.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{units}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% A simple dot to overcome graphicx limitations
+\newcommand{\lyxdot}{.}
+
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{Project One}
+
+
+\author{Shuowen Wei}
+
+\maketitle
+
+\part{Theoretical Part}
+\begin{description}
+\item [{Problem}] 3.1
+\end{description}
+Proof:
+
+Obviously, since $W$ is a matrix, then $Wx$ is also a vector, so
+$\forall\, vector\, x,\,||x||_{W}=||Wx||\geq0$, and if $x=0,\,||x||_{W}=||Wx||=0$.
+And if $||x||_{W}=||Wx||=0$, then $Wx=0$ by the definition of $||\centerdot||$,
+because $W$ is arbitrary nonsingular matrix, which means all of row
+vectors are linear indenpendent, hence $x=0$. So $||x||_{W}=0$ if
+only and if $x=0$;
+
+Secondly, $\forall\, vector\, x\: and\, y,\,||x+y||_{W}=||W(x+y)||=||Wx+Wy||\leq||Wx||+||Wy||=||x||_{W}+||y||_{W}$;
+
+Thirdly, for any scalar $\alpha\in\mathbb{C}$, $||\alpha x||_{W}=||W(\alpha x)||=||\alpha Wx||=\alpha||Wx||=\alpha||x||_{W}$.
+Thus, $||\centerdot||_{W}$ is vector norm.
+\begin{description}
+\item [{Problem}] 3.2
+\end{description}
+Proof:
+
+Let $\lambda$ denote arbitrary eigenvalue of $A$ and $x$ is the
+corresponding eigenvector, then we have
+
+\[
+Ax=\lambda x
+\]
+
+
+get norm of both sides, so
+\[
+||Ax||=||\lambda x||=|\lambda|||x||
+\]
+
+
+By the definition of induced matrix norm
+\[
+||A||=sup_{x\neq0}\frac{||Ax||}{||x||}
+\]
+
+
+thus
+
+\[
+|\lambda|\,||x||=||Ax||\leq||A||\,||x||
+\]
+ $\Rightarrow$$|\lambda|\leq||A||$. Because $\lambda$ is arbitrary
+eigenvalue of $A$, so $\rho(x)\leq||A||$.
+\begin{description}
+\item [{Problem}] 3.6
+\end{description}
+Proof:
+
+(a).
+
+Obviously, for any vector $x$, $||x||'=sup_{||y||=1}|y^{*}x|\geq0$,
+and if $x=0,\,||x||'=sup_{||y||=1}|y^{*}0|=0$. And when $||x||'=sup_{||y||=1}|y^{*}x|=0$,
+then
+\[
+0=sup_{||y||=1}|y^{*}x|=sup_{||y||=1}||x||\,||y||\,|\cos(\theta)|
+\]
+ where $\cos(\theta)=\frac{y^{*}x}{||x||\,||y||}$, so $0=sup_{||y||=1}||x||\,||y||\,|\cos(\theta)|=||x||$,
+(because $||y||=1$and $sup\cos(\theta)=1$), so $x=0$. Thus $||x||'=0$
+if and only if $x=0$;
+
+Secondly, for any two vector $x$ and $z$, $||x+z||'=sup_{||y||=1}|y^{*}(x+z)|=sup_{||y||=1}|y^{*}x+y^{*}z|\leq sup_{||y||=1}|y^{*}x|+sup_{||y||=1}|y^{*}z|=||x||'+||z||'$;
+
+Thirdly, for any scalar $\alpha\in\mathbb{C}$, $||\alpha x||'=sup_{||y||=1}|y^{*}(\alpha x)|=|\alpha|\, sup_{||y||=1}|y^{*}x|=|\alpha|\,||x||'$.
+
+Hence, $||\centerdot||'$ is a norm.
+
+(b).
+
+Since $x,\, y$ is give with $||x||=||y||=1,$ then to show there
+exits a rank one $B=yz^{*}$ such that $Bx=y$ and $||B||=1$is to
+show there is such a vector $z^{*}$ satisfies
+
+Since $Bx=y\,\Longleftrightarrow\, Bx-y=0$, then $||Bx-y||=0=||yz^{*}x-y||=||y(z^{*}x-1)||$
+sinc e $z^{*}x$ is scalar here, and $||y||=1$ by given, so $|z^{*}x-1|=0$.
+
+By the lemma, for any $x$, there exits a nonzero $z$ s.t. $|z^{*}x|=||z||'||x||$,
+then for the given $x$, we have $\frac{|z^{*}x|}{||z||'}-1=0$, to
+get rid of the absolute value sign, we let
+
+\[
+z_{o}=sign(z^{*}x)\frac{z}{||z||'}
+\]
+
+
+then this $z_{o}$ statisfies $Bx=y$, and it is easy verify that
+$||B||=\underset{||x||=1}{sup}||Bx||=\underset{||x||=1}{sup}||y||=1$.
+Besides, since both $y,\, z_{o}\in\mathbb{C}^{m}$, then $B=yz_{o}^{*}$
+is always a rank-one matrix, because all the row vectors of the matrix
+$B$ are linear dependent, i.e. for any $i\neq j,\,1\leq i,\, j\leq m$
+
+\[
+\frac{\overrightarrow{b_{i}}}{\overrightarrow{b_{j}}}=\frac{y_{i}}{y_{i}}
+\]
+
+
+where $\overrightarrow{b_{i}}\overrightarrow{,\, b_{i}}$ are two
+distinct row vectors of $B$ and $y_{i},\, y_{j}$ are the corresponding
+entries of $y$.
+\begin{description}
+\item [{Problem}] 5.3
+\end{description}
+Solotion:
+
+(a).
+
+Since $A=\left[\begin{array}{cc}
+-2 & 11\\
+-10 & 5
+\end{array}\right]$, then we denot $M\triangleq A^{*}A$, then
+
+\[
+M=\left[\begin{array}{cc}
+-2 & -10\\
+11 & 5
+\end{array}\right]\left[\begin{array}{cc}
+-2 & 11\\
+-10 & 5
+\end{array}\right]=\left[\begin{array}{cc}
+104 & -72\\
+-72 & 146
+\end{array}\right]
+\]
+
+
+it is easy to compute the eigenvalues $\lambda_{1},\,\lambda_{2}$
+of $M$ by $|M-\lambda I|=0\Rightarrow(\lambda_{1}-200)(\lambda_{2}-50)=0$,
+thus $\lambda_{1}=200>\lambda_{2}=50$. So the singular values in
+$\Sigma=\left[\begin{array}{cc}
+\sigma_{1} & 0\\
+0 & \sigma_{2}
+\end{array}\right]$ are $\sigma_{1=}\sqrt{200}=14.1421$ and $\sigma_{2}=\sqrt{50}=7.0711$.
+
+Now we compute $V$.
+
+For $M$, find the corresponding eigenvectors of its eigenvalues $\lambda_{1},\,\lambda_{2}$,
+we denote them as $X=\left[x_{1},\, x_{2}\right]^{T}$ and $Y=\left[y_{1},\, y_{2}\right]^{T}$:
+
+\[
+(M-\lambda_{1}I)\, X=0\Rightarrow\left[\begin{array}{cc}
+104-200 & -72\\
+-72 & 146-200
+\end{array}\right]\left[\begin{array}{c}
+x_{1}\\
+x_{2}
+\end{array}\right]=0\Rightarrow x_{1}=-\frac{3}{4}x_{2}
+\]
+
+
+Since $x_{1}^{2}+x_{2}^{2}=1,$ then $x_{1}=0.6,\, x_{2}=-0.8$. Similarly,
+we can get $Y=\left[\begin{array}{cc}
+0.8 & 0.6\end{array}\right]^{T}$.(Under the request that $V$ has the minimal number of signs)
+
+Thus
+\[
+V=\left[\begin{array}{cc}
+X & Y\end{array}\right]=\left[\begin{array}{cc}
+0.6 & 0.8\\
+-0.8 & 0.6
+\end{array}\right]
+\]
+
+
+Then we compute $U$ by $U=A(V^{*})^{-1}\Sigma^{-1}=AV\Sigma^{-1}=\left[\begin{array}{cc}
+-2 & 11\\
+-10 & 5
+\end{array}\right]\left[\begin{array}{cc}
+0.6 & 0.8\\
+-0.8 & 0.6
+\end{array}\right]\left[\begin{array}{cc}
+14.1421 & 0\\
+0 & 7.0711
+\end{array}\right]^{-1}$
+
+thus $U=\left[\begin{array}{cc}
+-0.7071 & 0.7071\\
+-0.7071 & -0.7071
+\end{array}\right]$
+
+(b).
+
+Please m-file: \textbf{5.3 .m}
+
+The nonsingular values: $\Sigma=\left[\begin{array}{cc}
+14.1421 & 0\\
+0 & 7.0711
+\end{array}\right]$;
+
+The left nonsingular vectors $u_{1},\, u_{2}$ are: $U=\left[u_{1}|u_{2}\right]=\left[\begin\acute{}{array}{cc}
+-0.7071 & 0.7071\\
+-0.7071 & -0.7071
+\end{array}\right]$;
+
+The right nonsingular vectors $v_{1},\, v_{2}$ are: $V=\left[v_{1}|v_{2}\right]=\left[\begin{array}{cc}
+0.6 & 0.8\\
+-0.8 & 0.6
+\end{array}\right]$.
+
+\includegraphics[scale=0.5]{5\lyxdot 3}
+
+(c).
+
+$||A||_{1}=16$
+
+$||A||_{2}=\sqrt{\rho(A^{T}A)}=\sqrt{200}=14.1421$
+
+$||A||_{\infty}=15$
+
+(d).
+
+Since $A=U\Sigma V^{*}$, then $(A)^{-1}=(U\Sigma V^{*})^{-1}=(V^{*})^{-1}\Sigma^{-1}U^{-1}=V\Sigma^{-1}U^{*}$,
+then
+
+\[
+A=\left[\begin{array}{cc}
+0.6 & 0.8\\
+-0.8 & 0.6
+\end{array}\right]\left[\begin{array}{cc}
+\nicefrac{1}{\sqrt{200}} & 0\\
+0 & \nicefrac{1}{\sqrt{50}}
+\end{array}\right]\left[\begin{array}{cc}
+-0.7071 & -0.7071\\
+0.7071 & -0.7071
+\end{array}\right]=\left[\begin{array}{cc}
+0.05 & -0.11\\
+0.1 & -0.02
+\end{array}\right]
+\]
+
+
+(e).
+
+Denote $\lambda$ be the eigenvalues of matrix $A$, then let $|A-\lambda I|=0\Rightarrow|\begin{array}{cc}
+-2-\lambda & 11\\
+-10 & 5-\lambda
+\end{array}|=0\Rightarrow(\lambda-5)(\lambda+2)+100=0$, then solve the equation, the roots are the eigenvalues of $A$ :
+$\lambda_{1,2}=\frac{3\pm\sqrt{-391}}{2}=1.5\pm9.8869i$
+
+(f).
+
+Eigenvalues of $A$ are $\lambda_{1,2}=\frac{3\pm\sqrt{-391}}{2}=1.5\pm9.8869i$,
+so
+
+\[
+\lambda\lambda_{2}=\frac{3+\sqrt{-391}}{2}\cdot\frac{3-\sqrt{-391}}{2}=100
+\]
+
+
+while$det(A)=-2\times5-(-10)\times11=100$
+
+thus
+
+\[
+det(A)=\lambda_{1}\lambda_{2}
+\]
+
+
+And $|det(A)|=100,$ and $\sigma_{1}\sigma_{2}=\sqrt{200}\sqrt{50}=100$,
+so $|det(A)|=\sigma_{1}\sigma_{2}$.
+
+(g).
+
+The length of the long axis is $||\sigma_{1}u_{1}||_{2}=10\sqrt{2}$
+and the length of the short axis is $||\sigma_{2}u_{2}||_{2}=5\sqrt{2}$,
+so the eare is $S=\pi ab=100\pi$.
+\begin{description}
+\item [{Problem}] 5.4
+\end{description}
+Solution:
+
+Suppose the eigenvalues of the hermitian matrix $M=\left[\begin{array}{cc}
+0 & A^{*}\\
+A & 0
+\end{array}\right]_{2m\times2m}$ in block form are $\lambda_{i}=\left[\begin{array}{cccc}
+\lambda_{(i-1)m+1} & 0 & \cdots & 0\\
+0 & \lambda_{(i-1)m+2} & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & \lambda_{(i-1)m+m}
+\end{array}\right]_{m\times m},\, i=1,2$, and denote $X=\left[\begin{array}{cc}
+a & b\\
+c & d
+\end{array}\right]_{2m\times2m}$ be the corresponding eigenmatrix of the eigenvalues matrix of $\Lambda=\left[\begin{array}{cc}
+\lambda_{1} & 0\\
+0 & \lambda_{2}
+\end{array}\right]$, where $a,\, b,\, c\, d$ are all $m\times m$ block matrixs, then
+the eigenvalue decomposition of $M$ is $M=X\Lambda X^{-1}$. So our
+goal is to find such $\Lambda$ and its corresponding $X$.
+
+Since $M$ is hermitian matrix, then by Theorem 5.5, the eigenvalues
+of $M$ are real and the eigenmatrixs are unitary, which implies $X^{-1}=X^{*},$
+so $M=X\Lambda X^{*}$. To find $\Lambda$, we compute the roots of
+$det(M-\Lambda I)=0=det(\left[\begin{array}{cc}
+-\lambda & A^{*}\\
+A & -\lambda
+\end{array}\right])\Rightarrow\lambda^{2}=\Sigma^{2}$, so $\lambda_{1}=\Sigma\: and\,\lambda_{2}=-\Sigma$ since $\lambda_{1},\,\lambda_{2}$
+are both real.
+
+Next, we try to find $X$. We compute $MM$ separately.
+
+Since $U,\, V$ are unitary, so in one way, we have:
+
+\[
+MM=\left[\begin{array}{cc}
+0 & A^{*}\\
+A & 0
+\end{array}\right]\left[\begin{array}{cc}
+0 & A^{*}\\
+A & 0
+\end{array}\right]=\left[\begin{array}{cc}
+A^{*}A & 0\\
+0 & AA^{*}
+\end{array}\right]=\left[\begin{array}{cc}
+V\Sigma^{2}V^{*} & 0\\
+0 & U\Sigma{}^{2}U*
+\end{array}\right]
+\]
+
+
+In the other way, since $X$ is also unitary, so we have:
+
+\[
+MM=(X\Lambda X^{*})(X\Lambda X^{*})=X\Lambda^{2}X^{*}
+\]
+
+
+thus
+
+\[
+M=\left[\begin{array}{cc}
+a & b\\
+c & d
+\end{array}\right]\left[\begin{array}{cc}
+\lambda_{1}^{2} & 0\\
+0 & \lambda_{2}^{2}
+\end{array}\right]\left[\begin{array}{cc}
+a^{*} & c^{*}\\
+b^{*} & d^{*}
+\end{array}\right]=\left[\begin{array}{cc}
+a\Sigma^{2}a^{*}+b\Sigma^{2}b^{*} & a\Sigma^{2}c^{*}+b\Sigma^{2}d^{*}\\
+c\Sigma^{2}a^{*}+d\Sigma^{2}b^{*} & c\Sigma^{2}c^{*}+d\Sigma^{2}d^{*}
+\end{array}\right]
+\]
+
+
+so
+
+\[
+\left[\begin{array}{cc}
+V\Sigma^{2}V^{*} & 0\\
+0 & U\Sigma{}^{2}U*
+\end{array}\right]=\left[\begin{array}{cc}
+a\Sigma^{2}a^{*}+b\Sigma^{2}b^{*} & a\Sigma^{2}c^{*}+b\Sigma^{2}d^{*}\\
+c\Sigma^{2}a^{*}+d\Sigma^{2}b^{*} & c\Sigma^{2}c^{*}+d\Sigma^{2}d^{*}
+\end{array}\right]
+\]
+
+
+$\Rightarrow a\Sigma^{2}a^{*}+b\Sigma^{2}b^{*}=V\Sigma^{2}V^{*},\, a\Sigma^{2}c^{*}+b\Sigma^{2}d^{*}=0,\, c\Sigma^{2}a^{*}+d\Sigma^{2}b^{*}=0,\, c\Sigma^{2}c^{*}+d\Sigma^{2}d^{*}=U\Sigma{}^{2}U*$.
+Since $X$ is also a unitary matrix, which means $\left[\begin{array}{cc}
+a & c\end{array}\right]^{T}$ and $\left[\begin{array}{cc}
+b & d\end{array}\right]^{T}$ are mutually orthogonal and their norms should be 1. So we find :
+
+\[
+X=\left[\begin{array}{cc}
+\frac{\sqrt{2}}{2}V & \frac{\sqrt{2}}{2}V\\
+\frac{\sqrt{2}}{2}U & -\frac{\sqrt{2}}{2}U
+\end{array}\right]=\frac{\sqrt{2}}{2}\left[\begin{array}{cc}
+V & V\\
+U & -U
+\end{array}\right]
+\]
+
+
+Thus we get $M=X\Lambda X^{-1}$
+\begin{description}
+\item [{Problem}] 6.3
+\end{description}
+Proof:
+
+Since $A\in\mathbb{C}^{m\times n}$ is not a square matrix (suppose
+$m>n$), so we use the reduced singular value decomposition (SVD)
+of $A$, which is $A=\hat{U}\hat{\Sigma}V^{*}$ where $\hat{U}\in\mathbb{C}^{m\times n}$
+and $V\in\mathbb{C}^{n\times n}$ are both unitary and $\hat{\Sigma}\in\mathbb{R}^{n\times n}$
+is diagonal. Then
+
+\[
+A^{*}A=(U\hat{\Sigma}V^{*})^{*}(U\hat{\Sigma}V^{*})=V\hat{\Sigma}^{2}V^{*}
+\]
+
+
+$\left(\Leftarrow\right):$ If $A^{*}A$ is nonsingular, then $det(A^{*}A)=det(V\hat{\Sigma}^{2}V^{*})=det(Vdet(\hat{\Sigma}^{2})det(V^{*})=det(\hat{\Sigma}^{2})\neq0$,
+then all the n entries of $\hat{\Sigma}$ are nonzero, which implies
+all of the n singular values of$A$ are nonzero, then$A$ is full
+rank.
+
+$\left(\Rightarrow\right):$Since $A$ is full rank, then $A$ has
+n nonzero singular values, then $det(A^{*}A)=det(\hat{\Sigma}^{2})\neq0$,
+so $A^{*}A$ is nonsingular.
+\begin{description}
+\item [{Problem}] 7.5
+\end{description}
+Proof:
+
+(a).
+
+$\left(\Rightarrow\right):$ Since $A$ has rank $n$, then $A$ is
+rull rank, so by Theorem 7.2 we can easily conclude that the diagonal
+entries of $\hat{R}$ are nonzero (positive).
+
+$\left(\Leftarrow\right):$ From the Gram-Schmidt iteration, $\left(7.8\right)$
+and $(7.6)$, we have
+
+\[
+|r_{jj}|=\Vert a_{j}-\Sigma_{i=1}^{j-1}{\displaystyle r_{ij}q_{i}}\Vert
+\]
+where
+\[
+q_{i}=\frac{a_{i}-\Sigma_{k=1}^{i-1}{\displaystyle r_{ki}q_{k}}}{r_{ii}}
+\]
+
+
+If all diagonal entries $r_{jj}$ of $\hat{R}$ are nonzero, then
+for any $j=1,\,2,\,3...\, n$, $\Vert a_{j}-\Sigma_{i=1}^{j-1}{\displaystyle r_{ij}q_{i}}\Vert\neq0$,
+which implies that $a_{j}$ cannot be written as the compositon of
+$q_{1},\, q_{2},\,...q_{j-1}$, and because each $q_{i}$ can be written
+as composition of $a_{1},\, a_{2},\,...a_{i}$, let $i=j-1$, then
+$a_{j}$ cannot be written as the compositon of $a_{1},\, a_{2},\,...a_{j-1}$,
+i.e. $a_{j}$ is linear independent with $a_{1},\, a_{2},\,...a_{j-1}$,
+thus all the n column vectors $a_{1},\, a_{2},\,...a_{n}$of $A$
+are mutually linear independent. Thus $A$ has full rank.
+
+(b).
+
+$\hat{R}$ has $k$ nonzero diagonal entries, then the rank of $A$
+is exactly $k$.
+
+This follows from the $\left(\Leftarrow\right)$ of part (a). Suppose
+that only $r_{11},\, r_{22},\,...r_{kk}$ are nonzero. Then we can
+find, similar to part (a), at least $a_{1},\, a_{2},\,...a_{k}$ are
+mutually linear independent. Now we consider $a_{k+1}$:
+
+Since$r_{k+1,k+1}=0,$and $|r_{k+1,k+1}|=\Vert a_{k+1}-\Sigma_{i=1}^{k}{\displaystyle r_{i,k+1}q_{i}}\Vert=0$,
+so
+\[
+a_{k+1}=\Sigma_{i=1}^{k}{\displaystyle r_{i,k+1}q_{i}}
+\]
+ where $q_{i}=\frac{a_{i}-\Sigma_{k=1}^{i-1}{\displaystyle r_{ki}q_{k}}}{r_{ii}}$,
+since every $q_{i}$ can be written as composition of $a_{1},\, a_{2},\,...a_{i}$,
+so let $i=k$, then $a_{k+1}$ can be written as the composition of
+$a_{1},\, a_{2},\,...a_{k}$, thus
+
+\[
+a_{i}\in<a_{1},\, a_{2},\,...a_{k}>\, for\, k+1\leq i\leq n
+\]
+Thus $A$ has exactly rank $k$.
+\begin{description}
+\item [{2.}]~
+\end{description}
+Proof:
+
+Since $A\in\mathbb{C}^{m\times n}$ and $b\in\mathbb{C}^{m}$, so
+$b\notin range(A)$, thus this rectangular system of equations is
+overdetermined. Denote $r=b-Ax$ called the residual, then by Theorem
+11.1 a vector $x$ minimizes the residual norm $||r||_{2}=||b-Ax||_{2}$
+if and only if $r\perp range(A)$, that is $A^{*}r=0$. Thus $A^{*}r=0\,\Leftrightarrow\, A^{*}Ax=A^{*}b$.
+
+Let's compute $x$ now. In proof of \textbf{problem 6.3 }(see above),
+we have already proved that if $A$ has full rank, then $A^{*}A$
+is nonsingular, thus $A^{*}A$ 's inverse exits. By the given reduced
+SVD of $A=\hat{U}\hat{\Sigma}\hat{V}^{*}$, then we find $x$:
+
+\[
+x=(A^{*}A)^{-1}A^{*}b=(\hat{V}\Sigma\hat{U}^{*}\hat{U}\hat{\Sigma}\hat{V}^{*})^{-1}(\hat{U}\hat{\Sigma}\hat{V}^{*})^{*}b=\hat{V}\Sigma^{-2}\hat{V}^{*}\hat{V}\Sigma\hat{U}^{*}b=\hat{V}\Sigma^{-1}\hat{U}^{*}b
+\]
+
+
+thus
+
+
+\part{Numerical Experiments}
+\begin{description}
+\item [{1.}]~
+\end{description}
+Please see the m-file: \textbf{Q1 of coding part.m}
+
+\textbf{Just copy the whole code and run it, we will get as follows:}
+
+{*}{*}{*}{*}{*}to verify the unitary of Qs from clgs and msg {*}{*}{*}{*}{*}
+
+--All of column vectors are unit in Qs from clgs
+
+{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
+
+--All of column vectors are unit in Qs from mgs
+
+{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
+
+{*}{*}{*}{*}{*}to verify the orthogonality of Qs from clgs and msg
+{*}{*}{*}{*}{*}
+
+1.Qs from clgs are not orthogonal
+
+it is not orthogonal when e = 1.000000e-008
+
+the inner product of the two nonorthogonal vector is 5.000000e-001,
+which is far away from 0
+
+2.Qs from mgs are orthogonal
+
+The observations are cited insides the gragh below:
+
+\includegraphics[scale=0.5]{\string"photo of code part Q1\string".jpg}
+
+Conclusion: Classical G-S algorithm is not stable when the matrix
+contains some tiny values, that's to say the matrix is ill conditioned.
+While Modified G-S algorithm is more stable.
+\begin{description}
+\item [{Problem}] 10.2
+\end{description}
+Please see the m-files: \textbf{house.m} and \textbf{formQ.m}
+
+Actually, the $R$ we get from house.m is m-by-n matrix.
+\begin{description}
+\item [{Problem}] 10.3
+\end{description}
+Please see the m-file: \textbf{10.3.m}
+
+Differences:
+
+1. The diagonal entries of $R1$ by \textbf{mgs} are all positive,
+but the diagonal entries of $R2$ and $R3$ exist some negative ones.
+
+2. $R2$ has the same column and row numbers as $Z$ because householder
+projections are just kind of row operations, they don't change the
+shape of the original matrix. While $R1$ and $R3$'s column and rom
+numbers are same with each other but not the same with $Z$.
+\end{document}

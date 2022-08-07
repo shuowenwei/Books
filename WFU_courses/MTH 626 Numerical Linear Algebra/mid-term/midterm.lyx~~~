@@ -1,0 +1,1049 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Midterm Exam
+\end_layout
+
+\begin_layout Author
+Shuowen Wei
+\end_layout
+
+\begin_layout Description
+Problem 1
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+By the given conditions, we can easily get: 
+\begin_inset Formula $Ir+Ax=b$
+\end_inset
+
+ and 
+\begin_inset Formula $A^{T}r=0$
+\end_inset
+
+.
+ Then left multiply 
+\begin_inset Formula $A^{T}$
+\end_inset
+
+ to the first equation, we have,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A^{T}Ir+A^{T}Ax=0+A^{T}Ax=A^{T}b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus 
+\begin_inset Formula $A^{T}Ax=A^{T}b$
+\end_inset
+
+, since 
+\begin_inset Formula $A$
+\end_inset
+
+ is full rank, then by 
+\series bold
+Theorem 11.2
+\series default
+, we know that the solution 
+\begin_inset Formula $x$
+\end_inset
+
+ of 
+\begin_inset Formula $A^{T}Ax=A^{T}b$
+\end_inset
+
+ minimize the 
+\begin_inset Formula $||Ax-b||_{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Description
+Problem 2
+\end_layout
+
+\begin_layout Standard
+Solution:
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A$
+\end_inset
+
+ is a real matrix with reduced SVD 
+\begin_inset Formula $A=\hat{U}\hat{\Sigma}V^{T}$
+\end_inset
+
+, so 
+\begin_inset Formula $\hat{U}$
+\end_inset
+
+ is m-by-n real unit
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ary 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+matrix and 
+\begin_inset Formula $\hat{\Sigma,\, V}$
+\end_inset
+
+ are both n-by-n real matrix with is 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ diagonal and 
+\begin_inset Formula $V$
+\end_inset
+
+ is unitary.
+ 
+\end_layout
+
+\begin_layout Standard
+Thus, we have:
+\end_layout
+
+\begin_layout Standard
+1.
+\begin_inset Formula 
+\[
+(A^{T}A)^{-1}A^{T}=(V\hat{\Sigma}\hat{U}^{T}\hat{U}\hat{\Sigma}V^{T})^{-1}(\hat{U}\hat{\Sigma}V^{T})^{T}=(V\hat{\Sigma}^{-2}V^{T})(V\hat{\Sigma}\hat{U}^{T})=V\hat{\Sigma}^{-1}\hat{U}^{T}(=A^{-1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A(A^{T}A)^{-1}=(\hat{U}\hat{\Sigma}V^{T})(V\hat{\Sigma}\hat{U}^{T}\hat{U}\hat{\Sigma}V^{T})^{-1}=(\hat{U}\hat{\Sigma}V^{T})(V\hat{\Sigma}^{-2}V^{T})=\hat{U}\hat{\Sigma}^{-1}V^{T}(=(A^{T})^{-1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Problem 3
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+For an arbitrary real matrix 
+\begin_inset Formula $A\in\mathbb{C}^{m\times n}$
+\end_inset
+
+, Moore-Penrose pseudoinverse of 
+\begin_inset Formula $A$
+\end_inset
+
+ (
+\begin_inset Formula $A$
+\end_inset
+
+ must be full rank), denoted by 
+\begin_inset Formula $A^{+}$
+\end_inset
+
+, is defined as: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A^{+}=(A^{T}A)^{-1}A^{T}\in\in\mathbb{C}^{n\times m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since real matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ has a reduced SVD 
+\begin_inset Formula $A=\hat{U}\hat{\Sigma}V^{T}$
+\end_inset
+
+, then by using the results of problem 2, we verify:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+AA^{+}A=A((A^{T}A)^{-1}A^{T})A=(\hat{U}\hat{\Sigma}V^{T})(V\hat{\Sigma}^{-1}\hat{U}^{T})(\hat{U}\hat{\Sigma}V^{T})=\hat{U}\hat{\Sigma}V^{T}=A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A^{+}A=((A^{T}A)^{-1}A^{T})A=(V\hat{\Sigma}^{-1}\hat{U}^{T})(\hat{U}\hat{\Sigma}V^{T})=I=I^{T}=(A^{+}A)^{T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus the Moore-Penrose pseudoinverse of 
+\begin_inset Formula $A$
+\end_inset
+
+ satisfies those two identities.
+ 
+\end_layout
+
+\begin_layout Description
+Problem 4
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+It is very similar to 
+\series bold
+Prop 11.2
+\series default
+, let 
+\begin_inset Formula $Az=0$
+\end_inset
+
+, then if 
+\begin_inset Formula $x$
+\end_inset
+
+ minimizes 
+\begin_inset Formula $||Ax-b||_{2}$
+\end_inset
+
+, so does 
+\begin_inset Formula $x+z$
+\end_inset
+
+.
+ And 
+\begin_inset Formula $z$
+\end_inset
+
+ is any element of 
+\begin_inset Formula $null(A)$
+\end_inset
+
+, since 
+\begin_inset Formula $A\in\mathbb{C}^{m\times n}$
+\end_inset
+
+ is full rank, then 
+\begin_inset Formula $rank(A)=m$
+\end_inset
+
+ since 
+\begin_inset Formula $m<n$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $dim(null(A))=n-m$
+\end_inset
+
+, thus the solution 
+\begin_inset Formula $x+z$
+\end_inset
+
+ is an (n-m)-dimentional set.
+ 
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A\in\mathbb{C}^{m\times n}(m<n)$
+\end_inset
+
+, so 
+\begin_inset Formula $A^{*}A\mathbb{\in C}^{n\times n}$
+\end_inset
+
+ is not nonsingular any more because its rank is 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $m<n$
+\end_inset
+
+.
+ But 
+\begin_inset Formula $AA^{*}\mathbb{\in C}^{m\times m}$
+\end_inset
+
+ is nonsingular and invertible.
+ So it is nature to think of another way to set 
+\begin_inset Formula $x=A^{*}y$
+\end_inset
+
+ such that 
+\begin_inset Formula $AA^{*}y=b$
+\end_inset
+
+.
+ Once we compute 
+\begin_inset Formula $y$
+\end_inset
+
+, we get 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ And it is easy to find that 
+\begin_inset Formula $y=(AA^{*})^{-1}b$
+\end_inset
+
+, thus one solution of the underdetermined least square problem is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=A^{*}y=A^{*}(AA^{*})^{-1}b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First of all, we will prove that this solution is exactly the unique minimum
+ norm solution.
+\end_layout
+
+\begin_layout Standard
+Suppose that for an arbitrary solution 
+\begin_inset Formula $X$
+\end_inset
+
+ of this problem, i.e., 
+\begin_inset Formula $AX=b$
+\end_inset
+
+, then we have 
+\begin_inset Formula $A(X-x)=0$
+\end_inset
+
+.
+ Thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(X-x)^{*}x=(X-x)^{*}A^{*}(AA^{*})^{-1}b=(A(X-x))^{*}(AA^{*})^{-1}b=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then 
+\begin_inset Formula $X-x$
+\end_inset
+
+ and 
+\begin_inset Formula $x$
+\end_inset
+
+ are mutually orthogonal, so we have 
+\begin_inset Formula $||X||^{2}=||X-x+x||^{2}=||X-x||^{2}+||x||^{2}\geqslant||x||^{2}$
+\end_inset
+
+, since 
+\begin_inset Formula $X$
+\end_inset
+
+ is the arbitrary solution of this problem, then 
+\begin_inset Formula $x$
+\end_inset
+
+ is the unique minimum norm solution.
+ 
+\end_layout
+
+\begin_layout Standard
+Secondly, we will give out different algorithms to compute this mim-norm
+ solution:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Appropriately modified normal equations:
+\end_layout
+
+\begin_layout Standard
+1.
+ Form 
+\begin_inset Formula $AA^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ Compute the Cholesky factorization 
+\begin_inset Formula $AA^{*}=R^{*}R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ Solve the lower-triangular system 
+\begin_inset Formula $R^{*}w=b$
+\end_inset
+
+ for 
+\begin_inset Formula $w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ Solve the upper-triangular system 
+\begin_inset Formula $Rz=w$
+\end_inset
+
+ for 
+\begin_inset Formula $z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5.
+ Set 
+\begin_inset Formula $x=A^{*}z$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+QR decomposition:
+\end_layout
+
+\begin_layout Standard
+1.
+ Compute the reduced QR factorization 
+\begin_inset Formula $A^{*}=\hat{Q}\hat{R}$
+\end_inset
+
+, where 
+\begin_inset Formula $\hat{Q}\in\mathbb{C}^{n\times m},\, and\,\hat{R}\in\mathbb{C}^{m\times m}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{Q}$
+\end_inset
+
+ is unitary and 
+\begin_inset Formula $\hat{R}$
+\end_inset
+
+ is nonsingular, upper triangular
+\end_layout
+
+\begin_layout Standard
+2.
+ Solve the lower-triangular system 
+\begin_inset Formula $\hat{R}^{*}z=b$
+\end_inset
+
+ for 
+\begin_inset Formula $z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ Set 
+\begin_inset Formula $x=\hat{Q}z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+SVD:
+\end_layout
+
+\begin_layout Standard
+1.
+ Compute the reduce SVD 
+\begin_inset Formula $A^{*}=\hat{U}\hat{\Sigma}V^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ Compute the vector 
+\begin_inset Formula $\hat{V}^{*}b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ Solve and 
+\begin_inset Formula $\hat{\Sigma}w=\hat{V}^{*}b$
+\end_inset
+
+ for 
+\begin_inset Formula $w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ Set 
+\begin_inset Formula $x=\hat{U}w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Problem 11.1
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+is nonsingular matrix of dimension 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, then 
+\begin_inset Formula $A$
+\end_inset
+
+ is full rank, so by the definition of pseudoinverse of 
+\begin_inset Formula $A$
+\end_inset
+
+, denoted by 
+\begin_inset Formula $A^{+}$
+\end_inset
+
+, 
+\begin_inset Formula $A^{+}=(A^{*}A)^{-1}A^{*}$
+\end_inset
+
+.
+ And 
+\begin_inset Formula $A$
+\end_inset
+
+ has reduced SVD 
+\begin_inset Formula $A=\hat{U}\hat{\Sigma}V^{*}$
+\end_inset
+
+, then 
+\begin_inset Formula $A^{*}A=V\Sigma^{2}V^{*}$
+\end_inset
+
+, so we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+||A^{+}||_{2}=||(A^{*}A)^{-1}A^{*}||_{2}=||V\Sigma^{-2}V^{*}V\Sigma U^{*}||_{2}=||V\Sigma^{-2}V^{*}V\Sigma U^{*}||_{2}=||\Sigma^{-1}||_{2}=\frac{1}{\sigma_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ is the smallest singular value, because 
+\begin_inset Formula $\sigma_{1},\,\sigma_{2},\,...\sigma_{n}$
+\end_inset
+
+ are in decreasing order.
+ 
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $V\Sigma^{2}V^{*}=A^{*}A=\left[\begin{array}{cc}
+A_{1}^{*} & A_{2}^{*}\end{array}\right]\left[\begin{array}{c}
+A_{1}\\
+A_{2}
+\end{array}\right]=A_{1}^{*}A_{1}+A_{2}^{*}A_{2}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\Sigma^{2}=V^{*}(A_{1}^{*}A_{1}+A_{2}^{*}A_{2})V=V^{*}A_{1}^{*}A_{1}V+V^{*}A_{2}^{*}A_{2}V=\Sigma_{1}^{2}+\Sigma_{2}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\Sigma_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Sigma_{2}$
+\end_inset
+
+ are the singular value matrix from the SVD of 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+and 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Because 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ is full rank, thus every element in 
+\begin_inset Formula $\Sigma_{1}^{2}$
+\end_inset
+
+ is positive, denote by 
+\begin_inset Formula $\alpha_{i}^{2},\, i=1,2...n$
+\end_inset
+
+.
+ And denote the element in 
+\begin_inset Formula $\Sigma_{2}^{2}$
+\end_inset
+
+ as 
+\begin_inset Formula $\beta_{i}^{2},\, i=1,2...n$
+\end_inset
+
+.
+ Both 
+\begin_inset Formula $\alpha_{i}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta_{i}^{2}$
+\end_inset
+
+ are in decreasing order.
+ So
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{i}^{2}=\alpha_{i}^{2}+\beta_{i}^{2},\, i=1,2...n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ is arbitrary, then 
+\begin_inset Formula $\beta_{i}^{2}\geq0$
+\end_inset
+
+, (i.e some 
+\begin_inset Formula $\beta_{i}^{2}$
+\end_inset
+
+ may equals to zero ), thus 
+\begin_inset Formula $\sigma_{i}^{2}\geq\alpha_{i}^{2},\, i=1,2...n$
+\end_inset
+
+, let 
+\begin_inset Formula $i=n$
+\end_inset
+
+, then 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\frac{1}{\sigma_{n}}\leq\frac{1}{\alpha_{n}}=||A_{1}^{-1}||_{2}$
+\end_inset
+
+, hence
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+||A^{+}||_{2}\leq||A_{1}^{-1}||_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Problem 11.3
+\end_layout
+
+\begin_layout Standard
+Please see the m-file: 
+\series bold
+midterm.m
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Just copy the whole code and run it, we will get as follows:
+\end_layout
+
+\begin_layout Standard
+the solution 1 is very good and acceptable 
+\end_layout
+
+\begin_layout Standard
+the solution 2 is very good and acceptable 
+\end_layout
+
+\begin_layout Standard
+the solution 3 is very good and acceptable 
+\end_layout
+
+\begin_layout Standard
+the solution 4 is very good and acceptable 
+\end_layout
+
+\begin_layout Standard
+the solution 5 is very good and acceptable 
+\end_layout
+
+\begin_layout Standard
+the solution 6 is very good and acceptable
+\end_layout
+
+\begin_layout Standard
+===== Please input "result" directly in the Command Window to get all the
+ solutions if you like ===== 
+\end_layout
+
+\begin_layout Standard
+Below are the six lists of the twelve coefficients: 
+\end_layout
+
+\begin_layout Standard
+coeff = Columns 1 through 3 
+\end_layout
+
+\begin_layout Standard
+
+\color red
+999.999961392580e-003
+\color inherit
+ 1.00000000166766e+000 1.00000000099660e+000 
+\end_layout
+
+\begin_layout Standard
+
+\color red
+934.609598937149e-003
+\color inherit
+ 934.609643543441e-003 934.609642735242e-003 
+\end_layout
+
+\begin_layout Standard
+746.990399160323e-003 746.990362478313e-003 746.990363182523e-003 
+\end_layout
+
+\begin_layout Standard
+461.679130551934e-003 461.679153132704e-003 461.679152633007e-003 
+\end_layout
+
+\begin_layout Standard
+115.989201689278e-003 115.989207162564e-003 115.989207125290e-003 
+\end_layout
+
+\begin_layout Standard
+-244.869859492343e-003 -244.869886874760e-003 -244.869886336078e-003 
+\end_layout
+
+\begin_layout Standard
+-573.704742484316e-003 -573.704721069467e-003 -573.704721555216e-003 
+\end_layout
+
+\begin_layout Standard
+-827.510048967594e-003 -827.510044386540e-003 -827.510044432986e-003 
+\end_layout
+
+\begin_layout Standard
+
+\color red
+-973.092981738117e-003
+\color inherit
+ -973.093006396147e-003 -973.093005888365e-003 
+\end_layout
+
+\begin_layout Standard
+-991.414199474889e-003 -991.414170358503e-003 -991.414170994523e-003 
+\end_layout
+
+\begin_layout Standard
+-880.077444206421e-003 -880.077476583473e-003 -880.077475870130e-003
+\end_layout
+
+\begin_layout Standard
+
+\color red
+-653.643593875715e-003
+\color inherit
+ -653.643620146207e-003 -653.643619561760e-003 
+\end_layout
+
+\begin_layout Standard
+Columns 4 through 6 
+\end_layout
+
+\begin_layout Standard
+1.00000000099661e+000 1.00000000099661e+000 1.00000000099661e+000 
+\end_layout
+
+\begin_layout Standard
+934.609642735245e-003 934.609642735245e-003 934.609642735244e-003 
+\end_layout
+
+\begin_layout Standard
+746.990363182526e-003 746.990363182526e-003 746.990363182525e-003 
+\end_layout
+
+\begin_layout Standard
+461.679152633008e-003 461.679152633008e-003 461.679152633008e-003 
+\end_layout
+
+\begin_layout Standard
+115.989207125290e-003 115.989207125291e-003 115.989207125290e-003 
+\end_layout
+
+\begin_layout Standard
+-244.869886336077e-003 -244.869886336077e-003 -244.869886336078e-003 
+\end_layout
+
+\begin_layout Standard
+-573.704721555216e-003 -573.704721555216e-003 -573.704721555216e-003
+\end_layout
+
+\begin_layout Standard
+-827.510044432986e-003 -827.510044432985e-003 -827.510044432987e-003 
+\end_layout
+
+\begin_layout Standard
+-973.093005888366e-003 -973.093005888364e-003 -973.093005888366e-003 
+\end_layout
+
+\begin_layout Standard
+-991.414170994525e-003 -991.414170994522e-003 -991.414170994525e-003 
+\end_layout
+
+\begin_layout Standard
+-880.077475870132e-003 -880.077475870130e-003 -880.077475870132e-003
+\end_layout
+
+\begin_layout Standard
+-653.643619561763e-003 -653.643619561760e-003 -653.643619561764e-003
+\end_layout
+
+\begin_layout Standard
+The mutual differences between the observations are very small, such that
+ we can even ignor the differences and think them are
+\end_layout
+
+\end_body
+\end_document

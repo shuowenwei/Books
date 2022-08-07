@@ -1,0 +1,269 @@
+%% LyX 2.0.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{amssymb}
+\usepackage{babel}
+\begin{document}
+
+\title{Project 3}
+
+
+\author{Shuowen Wei}
+
+\maketitle
+
+\part{Theoretical }
+\begin{description}
+\item [{Problem}] 20.1
+\end{description}
+Proof:
+
+$(\Rightarrow)$
+
+Since $A\in\mathbb{C}^{m\times m}$ is nonsingular, then $det(A)\neq0$,
+by (20.1) we have $L_{m-1}...L_{2}L_{1}A=U$ with each $L_{i}$ is
+unit lower-triangular matrix and $U$ is upper-triangular, then $det(L_{i})=1\neq0$.
+So
+
+\[
+0\neq det(A)=det(L_{1}^{-1})det(L_{2}^{-1})...det(L_{m-1}^{-1})det(U)
+\]
+
+
+Thus $det(U)\neq0$, so $U$ is nonsingular.
+
+Since the Gaussian elimination didn't change the determinants $det(A_{1:k,1:k})$,
+thus for $1\leq k\leq m$, $det(A_{1:k,1:k})=det(U_{1:k,1:k})$, since
+$U$ is upper-triangular and nonsingular, then every entries in the
+diagonal of $U$ is nonzero. Then $det(A_{1:k,1:k})=det(U_{1:k,1:k})\neq0$,
+thus every upper-left $k\times k$ block $A_{1:k,1:k}$ is nonsingular.
+
+$(\Leftarrow)$ Since every upper-left $k\times k$ block of $A$
+is nonsingular, then at every step of Gaussian elimination, after
+the row operation it still leaves the matrix nonsingular, thus matrix
+$A$ has such a LU factorization. 
+
+By the theorem on note of 15/11, since $A$ is nonsingular and hence
+invertible, if we require that the diagonal of $L$ or $U$ consists
+of ones, then the LU decomposition is unique. 
+\begin{description}
+\item [{Problem}] 20.3
+\end{description}
+Solution:
+
+(a). It is very obvious: 
+
+\[
+\left[\begin{array}{cc}
+I & 0\\
+-A_{21}A_{11}^{-1} & I
+\end{array}\right]\left[\begin{array}{cc}
+A_{11} & A_{12}\\
+A_{21} & A_{22}
+\end{array}\right]=\left[\begin{array}{cc}
+IA_{11}+0A_{21} & IA_{12}+0A_{22}\\
+-A_{21}A_{11}^{-1}A_{11}+IA_{21} & -A_{21}A_{11}^{-1}A_{12}+A_{22}
+\end{array}\right]
+\]
+
+
+\[
+=\left[\begin{array}{cc}
+A_{11} & A_{12}\\
+ & A_{22}-A_{21}A_{11}^{-1}A_{12}
+\end{array}\right]
+\]
+
+
+(b). Suppose $A_{21}=[\begin{array}{cccc}
+c_{1}, & ..., & c_{n-1}, & c_{n}\end{array}]$ and each $c_{i}\in\mathbb{C}^{m-n}$, then by n steps of Gaussian
+elimination, we have the $L_{1},\, L_{2},\,...L_{n}$ as follows:
+
+\[
+\left[\begin{array}{cc}
+I\\
+\left[0,...,-c_{n}\right]A_{11}^{-1} & I
+\end{array}\right]\left[\begin{array}{cc}
+I\\
+\left[0...,-c_{n-1},0\right]A_{11}^{-1} & I
+\end{array}\right]...\left[\begin{array}{cc}
+I\\
+\left[-c_{1},0...0\right]A_{11}^{-1} & I
+\end{array}\right]\left[\begin{array}{cc}
+A_{11} & A_{12}\\
+A_{21} & A_{22}
+\end{array}\right]
+\]
+
+
+\[
+=\left[\begin{array}{cc}
+I\\
+\left[0,...,-c_{n}\right]A_{11}^{-1} & I
+\end{array}\right]...\left[\begin{array}{cc}
+I\\
+\left[0,-c_{2},0...0\right]A_{11}^{-1} & I
+\end{array}\right]\left[\begin{array}{cc}
+A_{11} & A_{12}\\
+\left[-c_{1},0...,0\right]+A_{21} & A_{22}-c_{1}A_{11}^{-1}A_{12}
+\end{array}\right]
+\]
+
+
+\[
+......
+\]
+
+
+\[
+=\left[\begin{array}{cc}
+A_{11} & A_{12}\\
+\left[-c_{1},-c_{2}...,-c_{n}\right]+A_{21} & A_{22}-(c_{1}+c_{2}...+c_{n})A_{11}^{-1}A_{12}
+\end{array}\right]
+\]
+
+
+\[
+=\left[\begin{array}{cc}
+A_{11} & A_{12}\\
+ & A_{22}-A_{21}A_{11}^{-1}A_{12}
+\end{array}\right]
+\]
+
+
+thus the bottom-right $(m-n)\times(m-n)$ block of the result is again
+$A_{22}-A_{21}A_{11}^{-1}A_{12}$. 
+\begin{description}
+\item [{Problem}] 21.1
+\end{description}
+Solution:
+
+(1). Determine of $A$ from (20.5) is $det(A)=det(L)det(U)$, since
+$L$ is a unit lower-triangular matrix and $U$ is a upper-triangular
+matrix, thus 
+
+\[
+det(A)=1\cdot2\cdot1\cdot2\cdot2=8
+\]
+
+
+(2). Determine of $A$ from (20.5) is $det(PA)=deet(P)det(A)=det(L)det(U)$,
+the same with (1) except we need to calculate $det(P)=-1$, thus 
+
+\[
+-1\cdot det(A)=1\cdot8\cdot\frac{7}{4}\cdot(-\frac{6}{7})\cdot\frac{2}{3}=-8
+\]
+
+
+then $det(A)=8$.
+
+(3). Since interchanging two rows or columns will change the sign
+of the determinant of $A$, then after Gaussian elimination with pivoting
+we get $PA=LU$, since $det(L)=1$ and $det(U)$ is the product of
+its diagonal entries, and $det(P)=(-1^{n})$ where $n$ is the number
+of the times of interchanging two rows of matrix $A$ (partial pivoting),
+thus
+
+\[
+det(A)=det(U)*(-1)^{n}
+\]
+
+\begin{description}
+\item [{Problem}] 21.3
+\end{description}
+Proof:
+
+(a). Since both row operation and column operation don't change the
+singularity of the matrix, thus $AQ$ is still nonsingular since $A$
+is nonsingluare, hence $AQ$ is invertible, then by the Theorem on
+15/11's note that an invertible matrix admits a LU factorization,
+we know that such a factorization $AQ=LU$ always exists.
+
+(b). To show such a factorization does not always exist is to give
+an example. Since $A$ is singular, let $A=\left[\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 4 & 6\\
+7 & 8 & 9
+\end{array}\right]$ and just let $Q=I$, thus $L_{1}=\left[\begin{array}{ccc}
+1\\
+-2 & 1\\
+-7 &  & 1
+\end{array}\right]$, then we have
+
+\[
+L_{1}AQ=\left[\begin{array}{ccc}
+1\\
+-2 & 1\\
+-7 &  & 1
+\end{array}\right]\left[\begin{array}{ccc}
+1 & 2 & 3\\
+2 & 4 & 6\\
+7 & 8 & 9
+\end{array}\right]=\left[\begin{array}{ccc}
+1 & 2 & 3\\
+0 & 0 & 0\\
+0 & -6 & -12
+\end{array}\right]=U_{1}
+\]
+
+
+thus a factorization does not always exist. 
+\begin{description}
+\item [{Problem}] 23.1
+\end{description}
+Proof:
+
+It is true that $R=U$. 
+
+Since $A$ is nonsingular square matrix, then the SVD of $A$ is $A=U\Sigma V^{*}$,
+so $A^{*}A=V^{*}\Sigma^{2}V$, whose eigenvalues are the diagonal
+entries of $\Sigma^{2}$, i.e. positive, and since $(A^{*}A)^{*}=A^{*}A$,
+then $A^{*}A$ is hermitian positive definite. 
+
+By the QR factorization of $A$ that $A=QR$ where $Q$ is unitray,
+then $A^{*}A=R^{*}Q^{*}QR=R^{*}R$, since $r_{jj}>0$, then such a
+$QR$ factorization is unique, and $R$ is upper triangular matrix. 
+
+While $A^{*}A$ has Cholesky Factorization $A^{*}A=U^{*}U$ with $u_{jj}>0$,
+by \textbf{Theorem 23.1} that, every hermitian positive definite matrix
+has a unique Cholesky Factorization, thus $R=U$.
+
+
+\part{Numerical Experiments}
+\begin{description}
+\item [{1.}]~
+\end{description}
+Please run the m-file: \textbf{data.m}
+
+Gaussian elimination without pivoting: \textbf{nplu.m}
+
+Gaussian elimination with partial pivoting: \textbf{plu.m} (with \textbf{maxposition.m
+}and \textbf{interchange.m})
+\begin{description}
+\item [{23.3}]~
+\end{description}
+Answer:
+
+(1). The purpose of carrying out this experiment is to compare the
+computation time of using {}``$\setminus$'' to solve $Ax=b$ when
+given different input matrix $A$. The computation time actually reflects
+the steps of each part because they are all under the same computer
+machine, we can see that it varies depends on the condition of given
+matrix $A$. 
+
+(2). After checking {}``help chol'' and {}``help slash'' in MATLAB,
+we see that the {}``$\setminus$'' is better than inv and better
+than gaussian elimination. Also, it was much more faster because it
+consumes less steps. 
+
+We guess that for hermitian positive definite matrix of each part,
+{}``$\setminus$'' prefer to use Cholesky decomposition to get the
+inverse of matrix $A$, the result shows that it costs the least steps
+to compute the inverse of matrix $A$ in (f) because $A5$ itself
+is upper triangular matrix; and it costs much more time than others
+in (e) because it is not positive definite; and it costs much time
+in (c) and (g) because they are nor hermitian any more; for (a) (b)
+and (d), it's OK because they are just changes a little in their entries. 
+\end{document}

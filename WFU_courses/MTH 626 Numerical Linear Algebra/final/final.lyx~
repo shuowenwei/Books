@@ -1,0 +1,1409 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Final Exam
+\end_layout
+
+\begin_layout Author
+Shuowen Wei
+\end_layout
+
+\begin_layout Part
+Theoretical 
+\end_layout
+
+\begin_layout Description
+Problem 24.1 
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+(c).
+\end_layout
+
+\begin_layout Standard
+True:
+\end_layout
+
+\begin_layout Standard
+Since the eigenvalues are the roots of the characteristic polynomial of
+ 
+\begin_inset Formula $A$
+\end_inset
+
+, i.e 
+\begin_inset Formula $P(\lambda)=det(\lambda I-A)=0$
+\end_inset
+
+, 
+\begin_inset Formula $A$
+\end_inset
+
+ is real matrix so all the parameters in are real, and the complex roots
+ always appear in pairs.
+ If 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is the root of 
+\begin_inset Formula $P(\lambda)=0$
+\end_inset
+
+, so is 
+\begin_inset Formula $\bar{\lambda}$
+\end_inset
+
+, then 
+\begin_inset Formula $\bar{\lambda}$
+\end_inset
+
+ is also the eigenvalue of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(f).
+\end_layout
+
+\begin_layout Standard
+True:
+\end_layout
+
+\begin_layout Standard
+This is the
+\series bold
+ 
+\series default
+statement of 
+\series bold
+Theorem 5.5
+\series default
+, we just repeat the proof on Sept.
+ 8's note here: if 
+\begin_inset Formula $A$
+\end_inset
+
+ is hermitian matrix, then 
+\begin_inset Formula $A$
+\end_inset
+
+ has a complete set of orthogonal eigenvectors and all of the eigenvectors
+ are real.
+ Then 
+\begin_inset Formula $A$
+\end_inset
+
+ has eigenvalue decomposition as 
+\begin_inset Formula $A=Q\Lambda Q^{*}=Q|\Lambda|sign(\Lambda)Q^{*}$
+\end_inset
+
+, where the entries in the diagonal of 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\Lambda$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ are the eigenvalues of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $Q$
+\end_inset
+
+ is unitary matrix.
+ Just denote 
+\begin_inset Formula $Q$
+\end_inset
+
+ as 
+\begin_inset Formula $U$
+\end_inset
+
+ and 
+\begin_inset Formula $sign(\Lambda)Q^{*}$
+\end_inset
+
+ as 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $V^{*}$
+\end_inset
+
+, then we have 
+\begin_inset Formula $\Sigma=|\Lambda|$
+\end_inset
+
+, as desired.
+ 
+\end_layout
+
+\begin_layout Description
+Problem 24.4
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+(a).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Longrightarrow)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is 
+\begin_inset Formula $A$
+\end_inset
+
+'s arbitrary eigenvalue and 
+\begin_inset Formula $x$
+\end_inset
+
+ is its corresponding eigenvector, then 
+\begin_inset Formula $Ax=\lambda x$
+\end_inset
+
+, hence 
+\begin_inset Formula $\lambda^{2}x=\lambda Ax=A\lambda x=AAx=A^{2}x$
+\end_inset
+
+, repeat this way we can get that 
+\begin_inset Formula $\lambda^{n}x=A^{n}x$
+\end_inset
+
+.
+ By using the same idea we did in Exercise 3.2 (we already proved that on
+ 
+\series bold
+Project 1
+\series default
+), 
+\begin_inset Formula $|\lambda|^{n}\,||x||=||\lambda^{n}x||=||A^{n}x||\leq||A^{n}||\,||x||$
+\end_inset
+
+, thus we have 
+\begin_inset Formula $|\lambda^{n}|\leq||A^{n}||$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So if 
+\begin_inset Formula $lim_{n\rightarrow\infty}|\lambda^{n}|\leq lim_{n\rightarrow\infty}||A^{n}||=0$
+\end_inset
+
+, then 
+\begin_inset Formula $lim_{n\rightarrow\infty}|\lambda^{n}|=0$
+\end_inset
+
+, then 
+\begin_inset Formula $|\lambda|<1$
+\end_inset
+
+, since 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is arbitrary, then 
+\begin_inset Formula $\rho(A)<1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\Longleftarrow)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A\in\mathbb{C}^{m\times m}$
+\end_inset
+
+ is a square matrix, by 
+\series bold
+Theorem 24.9
+\series default
+ that 
+\begin_inset Formula $A$
+\end_inset
+
+ has a Schur factorization 
+\begin_inset Formula $A=QTQ^{*}$
+\end_inset
+
+ where 
+\begin_inset Formula $Q$
+\end_inset
+
+ is unitary and 
+\begin_inset Formula $T$
+\end_inset
+
+ is upper-triangular.
+ Note that 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $T$
+\end_inset
+
+ are similar then they have the same eigenvalues, since 
+\begin_inset Formula $T$
+\end_inset
+
+ is upper-triangular, then eigenvalues of 
+\begin_inset Formula $A$
+\end_inset
+
+ necessarily appear on the diagonal of 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Now we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A^{n}=(QTQ^{*})^{n}=QT^{n}Q^{*}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If
+\begin_inset Formula $\rho(A)=\rho(T)<1$
+\end_inset
+
+, then every entries in 
+\begin_inset Formula $T$
+\end_inset
+
+'s diagonal is less than 1.
+ Since 
+\begin_inset Formula $T$
+\end_inset
+
+ is upper triangular, then 
+\begin_inset Formula $lim_{n\rightarrow\infty}T^{n}=O$
+\end_inset
+
+, which implies that 
+\begin_inset Formula $lim_{n\rightarrow\infty}||A^{n}||=lim_{n\rightarrow\infty}||Q||\,||T^{n}||\,||Q^{*}||=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(b).
+ 
+\end_layout
+
+\begin_layout Standard
+The spectral abscissa of a matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ denoted as 
+\begin_inset Formula $\alpha(A)=max\, Re(\lambda)$
+\end_inset
+
+ where 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is the eigenvalue of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The definition of 
+\begin_inset Formula $e^{tA}$
+\end_inset
+
+ is 
+\begin_inset Formula $e^{tA}=\sum_{k=0}^{\infty}\frac{1}{k!}(tA)^{k}$
+\end_inset
+
+, and it has several properties as follows:
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $e^{t(TAT^{-1})}=Te^{tA}T^{-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $e^{t(A+B)}=e^{tA}e^{tB}$
+\end_inset
+
+ for all 
+\begin_inset Formula $B$
+\end_inset
+
+ with 
+\begin_inset Formula $AB=BA$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\begin_inset Formula $A=diag(A_{1},\, A_{2},...A_{m})\Longrightarrow e^{tA}=diag(e^{tA_{1}},e^{tA_{2}},...,e^{tA_{m}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A\in\mathbb{C}^{m\times m}$
+\end_inset
+
+ is a square matrix, by 
+\series bold
+Theorem 24.9
+\series default
+ that 
+\begin_inset Formula $A$
+\end_inset
+
+ has a Schur factorization 
+\begin_inset Formula $A=QTQ^{*}$
+\end_inset
+
+ where 
+\begin_inset Formula $Q$
+\end_inset
+
+ is unitary and 
+\begin_inset Formula $T$
+\end_inset
+
+ is upper-triangular.
+ Then 
+\begin_inset Formula $e^{tA}=Qe^{tT}Q^{*}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $T$
+\end_inset
+
+'s diagonal entries are 
+\begin_inset Formula $A$
+\end_inset
+
+'s eigenvalues, denote 
+\begin_inset Formula $T$
+\end_inset
+
+ as 
+\begin_inset Formula $T=\lambda I+N$
+\end_inset
+
+ where 
+\begin_inset Formula $N$
+\end_inset
+
+ is the rest of the entries in 
+\begin_inset Formula $T$
+\end_inset
+
+ except the eigenvalues, it's a kind like 
+\begin_inset Quotes eld
+\end_inset
+
+deficient upper triangular matrix
+\begin_inset Quotes erd
+\end_inset
+
+.
+ For any eigenvalue 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ that might be complex, 
+\begin_inset Formula $\lambda=Re(\lambda)+iIm(\lambda)$
+\end_inset
+
+, where 
+\begin_inset Formula $Re(\lambda)$
+\end_inset
+
+ and 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $Im(\lambda)$
+\end_inset
+
+ are real,
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ then 
+\begin_inset Formula $|e^{\lambda}|=|e^{Re(\lambda)}|\,|e^{iIm(\lambda)}|=|e^{Re(\lambda)}|.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we have 
+\begin_inset Formula $e^{tT}=e^{t\lambda}e^{tN}=e^{t\lambda}(1+tN+\cdots+\frac{1}{(m-1)!}(tN)^{m-1})$
+\end_inset
+
+, thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+||e^{tA}||=||Qe^{tT}Q^{*}||=|e^{t\lambda}|\,||e^{tN}||=|e^{tRe(\lambda)}|(1+t||N||+\cdots+\frac{1}{(m-1)!}t{}^{m-1}||N||^{m-1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then 
+\begin_inset Formula $\exists M>1$
+\end_inset
+
+, such that 
+\begin_inset Formula $e^{t\alpha(A)}\leq||e^{tA}||\leq Me^{t\alpha(A)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Then 
+\begin_inset Formula $lim_{t\rightarrow\infty}||e^{tA}||=0\Longleftrightarrow\alpha(A)<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Problem 25.1(a)
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A$
+\end_inset
+
+ is tridiagonal and hermitian, then 
+\begin_inset Formula $A$
+\end_inset
+
+ is full rank.
+ For any 
+\begin_inset Formula $\lambda\in\mathbb{C}$
+\end_inset
+
+, we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A-\lambda I=\left[\begin{array}{ccccc}
+a_{11}-\lambda & a_{12} & 0 & \cdots & 0\\
+a_{12} & a_{22}-\lambda & a_{23} & \cdots & 0\\
+0 & a_{23} & a_{3}-\lambda & \cdots\\
+\vdots & \vdots & \vdots & \ddots & a_{m-1,m}\\
+0 & 0 & 0 & a_{m-1,m} & a_{mm}-\lambda
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+since the subdiagonal and superdiagonal entries 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $a_{12},\, a_{23},\,...a_{m-1,m}$
+\end_inset
+
+ are nonzeros, then after row operation we can still get at least 
+\begin_inset Formula $m-1$
+\end_inset
+
+ rows of the matrix with first entry of each row is nonzero, thus 
+\begin_inset Formula $A-\lambda I$
+\end_inset
+
+ has at least rank 
+\begin_inset Formula $m-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A$
+\end_inset
+
+ is hermitian, by 
+\series bold
+Theorem 24.7
+\series default
+, 
+\begin_inset Formula $A$
+\end_inset
+
+ is unitarily diagonalizable, then we have that 
+\begin_inset Formula $A=Q\Lambda Q^{*}$
+\end_inset
+
+, where 
+\begin_inset Formula $Q$
+\end_inset
+
+ is unitary matrix and 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ is diagonal matrix with enreies are the eigenvalues of 
+\begin_inset Formula $A$
+\end_inset
+
+ , let 
+\begin_inset Formula $\Lambda=diag(\lambda_{1},\,\lambda_{2},\,...,\,\lambda_{m})$
+\end_inset
+
+, so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A-\lambda I=Q\Lambda Q^{*}-Q\lambda IQ^{*}=Q\left[\begin{array}{cccc}
+\lambda_{1}-\lambda & 0 & \cdots & 0\\
+0 & \lambda_{2}-\lambda & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & \lambda_{m}-\lambda
+\end{array}\right]Q^{*}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+since 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is arbitrary in 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+, so if 
+\begin_inset Formula $A$
+\end_inset
+
+ has any two same eigenvalues, say 
+\begin_inset Formula $\lambda_{i},\,\lambda_{j}$
+\end_inset
+
+, then let 
+\begin_inset Formula $\lambda=\lambda_{i}$
+\end_inset
+
+, then 
+\begin_inset Formula $Q(\Lambda-\lambda I)Q^{*}$
+\end_inset
+
+ will has rank at most 
+\begin_inset Formula $m-2$
+\end_inset
+
+, which contradicts that it has at least rank 
+\begin_inset Formula $m-1,$
+\end_inset
+
+ so every eigenvalues of 
+\begin_inset Formula $A$
+\end_inset
+
+ is distinct.
+ 
+\end_layout
+
+\begin_layout Description
+Problem 4
+\end_layout
+
+\begin_layout Standard
+Solution: 
+\end_layout
+
+\begin_layout Standard
+For any matrix 
+\begin_inset Formula $A\in C^{m\times n}$
+\end_inset
+
+, 
+\begin_inset Formula $m>n$
+\end_inset
+
+, the condition number in terms of the singular value of 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+k(A)=\parallel A\parallel\parallel A^{\dagger}\parallel=\frac{\sigma_{1}}{\sigma_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\sigma_{1}$
+\end_inset
+
+is largest singular value of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{n}$
+\end_inset
+
+ is the smallesst singular value of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ is not full rank, then 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\sigma_{n}=0$
+\end_inset
+
+, thus 
+\begin_inset Formula $k(A)=\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Problem 5
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+I think something is wrong with this question.
+ Why the conjugancy of 
+\begin_inset Formula $A$
+\end_inset
+
+ by two vectors is still a matrix? And what's the subspace of a vector space?
+\end_layout
+
+\begin_layout Description
+Problem 6
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+Suppose the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+'s rank is 
+\begin_inset Formula $r\,(\leq min(m,n))$
+\end_inset
+
+, then by 
+\series bold
+Theorem 5.9
+\series default
+, that for any 
+\begin_inset Formula $k$
+\end_inset
+
+ with 
+\begin_inset Formula $0\leq k\leq r$
+\end_inset
+
+, we have the best rank-k approximation of 
+\begin_inset Formula $A$
+\end_inset
+
+ is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+||A-A_{k}||_{F}=\underset{B\in\mathbb{C}^{m\times n}}{inf}||A-B||_{F}=\sqrt{\sigma_{k+1}+\sigma_{k+2}+\cdots+\text{\sigma}_{r}}\,\,\,\,\,(*)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $A$
+\end_inset
+
+ has SVD decomposition 
+\begin_inset Formula $A=\sum_{i=1}^{n}\sigma_{i}u_{i}v_{i}^{*}$
+\end_inset
+
+ and for 
+\begin_inset Formula $1\leq k\leq r$
+\end_inset
+
+ we have 
+\begin_inset Formula $A_{k}=\sum_{i=1}^{k}\sigma_{i}u_{i}v_{i}^{*}$
+\end_inset
+
+, and each 
+\begin_inset Formula $\sigma_{i}u_{i}v_{i}^{*}$
+\end_inset
+
+ is a rank one matrix.
+ The SVD of 
+\begin_inset Formula $A$
+\end_inset
+
+ is unique if the sign of 
+\begin_inset Formula $U$
+\end_inset
+
+ or 
+\begin_inset Formula $V$
+\end_inset
+
+ is fixed, since for any 
+\begin_inset Formula $k$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma_{k}\geq\sigma_{k+1}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\sigma_{k}=\sigma_{k+1}$
+\end_inset
+
+, then we will get two matrix 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ just with the last column different, one is 
+\begin_inset Formula $\sigma_{k}u_{k}v_{k}^{*},$
+\end_inset
+
+the other one is 
+\begin_inset Formula $\sigma_{k+1}u_{k+1}v_{k+1}^{*}$
+\end_inset
+
+ such that, by formula (*) 
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+||A-A_{k}||_{F}=\sqrt{\sigma_{k+1}+\sigma_{k+2}+\cdots+\text{\sigma}_{r}}=\sqrt{\sigma_{k}+\sigma_{k+2}+\cdots+\text{\sigma}_{r}}=||A-A_{k+1}||_{F}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hence the besk rank-k approximation is not unique.
+ So 
+\begin_inset Formula $A_{k}$
+\end_inset
+
+ is the unique solution to formula (*) to minimise the problem if and only
+ if 
+\begin_inset Formula $\sigma_{k}>\sigma_{k+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Problem 7
+\end_layout
+
+\begin_layout Standard
+Proof:
+\end_layout
+
+\begin_layout Standard
+By the definition of F-norm, 
+\begin_inset Formula $||A||_{F}^{2}=tr(A^{*}A)$
+\end_inset
+
+, then first of all, we will prove that for any matrix 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $||AB+(I-AA^{\dagger})C||_{F}^{2}=||AB||_{F}^{2}+||(I-AA^{\dagger})C||_{F}^{2}$
+\end_inset
+
+ holds.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+||AB+(I-AA^{\dagger})C||_{F}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+=(AB+(I-AA^{\dagger})C))^{*}(AB+(I-AA^{\dagger})C))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=(AB)^{*}(AB)+((I-AA^{\dagger})C)*((I-AA^{\dagger})C)+(AB)^{*}(I-AA^{\dagger})C+((I-AA^{\dagger})C)^{*}(AB)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since Moore-Penrose peseudoinverse 
+\begin_inset Formula $A^{\dagger}$
+\end_inset
+
+ has properties 
+\begin_inset Formula $A^{*}AA^{\dagger}=A^{*}$
+\end_inset
+
+ and 
+\begin_inset Formula $A^{\dagger*}A^{*}A=A$
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+(AB)^{*}(I-AA^{\dagger})C=O\, and\,((I-AA^{\dagger})C)^{*}(AB)=O
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+||AB+(I-AA^{\dagger})C||_{F}^{2}=||AB||_{F}^{2}+||(I-AA^{\dagger})C||_{F}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then for any n-by-m matrix 
+\begin_inset Formula $X$
+\end_inset
+
+, we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+||AX-I||_{F}^{2}=||A(X-A^{\dagger})+(I-AA^{\dagger})(-I)||_{F}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=||A(X-A^{\dagger})||_{F}^{2}+||(I-AA^{\dagger})(-I)||_{F}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\geq||AA^{\dagger}-I||_{F}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus 
+\begin_inset Formula $X=A^{\dagger}$
+\end_inset
+
+ minimizes 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $||AX-I||_{F}$
+\end_inset
+
+ over all n-by-m matrices, and we immediately get the value of this minimum
+ is 
+\begin_inset Formula $||AA^{\dagger}-I||_{F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part
+Numerical Experiments
+\end_layout
+
+\begin_layout Description
+1.
+\end_layout
+
+\begin_layout Standard
+Please run the m-file: 
+\series bold
+1.m
+\end_layout
+
+\begin_layout Standard
+we will get lamdas at iteration k=2,5,10,15,20,30,50,100 is:
+\end_layout
+
+\begin_layout Standard
+ans = 
+\end_layout
+
+\begin_layout Standard
+Columns 1 through 4 5.214312617702448 5.214319743375389 5.214319743377534 5.21431974
+3377536 
+\end_layout
+
+\begin_layout Standard
+Columns 5 through 8 5.214319743377536 5.214319743377536 5.214319743377536 5.21431974
+3377536
+\end_layout
+
+\begin_layout Description
+2.
+\end_layout
+
+\begin_layout Standard
+Please run the m-file: 
+\series bold
+2.m
+\end_layout
+
+\begin_layout Standard
+we will get lamdas at iteration k=2,5,10,15,20,30,50,100 is:
+\end_layout
+
+\begin_layout Standard
+ans = 
+\end_layout
+
+\begin_layout Standard
+Columns 1 through 4 5.214319743184033 5.214319743377535 5.214319743377534 5.21431974
+3377535 
+\end_layout
+
+\begin_layout Standard
+Columns 5 through 8 5.214319743377534 5.214319743377534 5.214319743377534 5.21431974
+3377534
+\end_layout
+
+\begin_layout Description
+3.
+\end_layout
+
+\begin_layout Standard
+Please run the m-file: 
+\series bold
+3.m
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3.jpg
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+comments:
+\end_layout
+
+\begin_layout Standard
+Both algorithms are very fast to get the right eigenvalues of 
+\begin_inset Formula $A$
+\end_inset
+
+, and initial point is also the same, both are 5.
+ But from the graph of 
+\begin_inset Formula $\lambda_{1}-\lambda_{2}$
+\end_inset
+
+ below, we can see that algorithm 2 use less steps to get the final answer,
+ while its computting obviously comsumes mch more time.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 4.jpg
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
