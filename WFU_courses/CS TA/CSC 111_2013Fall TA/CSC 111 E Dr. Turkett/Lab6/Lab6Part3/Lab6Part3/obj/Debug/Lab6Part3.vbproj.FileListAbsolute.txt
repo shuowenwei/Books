@@ -1,0 +1,14 @@
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab6Part3\Lab6Part3\bin\Debug\Lab6Part3.exe.config
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab6Part3\Lab6Part3\obj\Debug\Lab6Part3.Form1.resources
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab6Part3\Lab6Part3\obj\Debug\Lab6Part3.Resources.resources
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab6Part3\Lab6Part3\obj\Debug\Lab6Part3.vbproj.GenerateResource.Cache
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab6Part3\Lab6Part3\bin\Debug\Lab6Part3.exe
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab6Part3\Lab6Part3\bin\Debug\Lab6Part3.pdb
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab6Part3\Lab6Part3\bin\Debug\Lab6Part3.xml
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab6Part3\Lab6Part3\obj\Debug\Lab6Part3.exe
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab6Part3\Lab6Part3\obj\Debug\Lab6Part3.xml
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab6Part3\Lab6Part3\obj\Debug\Lab6Part3.pdb
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab6\Lab6Part3\Lab6Part3\bin\Debug\Lab6Part3.exe.config
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab6\Lab6Part3\Lab6Part3\obj\Debug\Lab6Part3.exe
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab6\Lab6Part3\Lab6Part3\obj\Debug\Lab6Part3.xml
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab6\Lab6Part3\Lab6Part3\obj\Debug\Lab6Part3.pdb

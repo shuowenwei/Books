@@ -1,0 +1,24 @@
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab6Part2\Lab6Part2\bin\Debug\Lab6Part2.exe.config
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.Form1.resources
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.Resources.resources
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.vbproj.GenerateResource.Cache
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab6Part2\Lab6Part2\bin\Debug\Lab6Part2.exe
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab6Part2\Lab6Part2\bin\Debug\Lab6Part2.pdb
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab6Part2\Lab6Part2\bin\Debug\Lab6Part2.xml
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.exe
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.xml
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.pdb
+D:\userdata\Desktop\CSC LAB\Lab 6\Lab6Part2\Lab6Part2\bin\Debug\Lab6Part2.exe.config
+D:\userdata\Desktop\CSC LAB\Lab 6\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.exe
+D:\userdata\Desktop\CSC LAB\Lab 6\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.xml
+D:\userdata\Desktop\CSC LAB\Lab 6\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.pdb
+D:\userdata\Desktop\CSC LAB\Lab 6\Lab6Part2\Lab6Part2\bin\Debug\Lab6Part2.exe
+D:\userdata\Desktop\CSC LAB\Lab 6\Lab6Part2\Lab6Part2\bin\Debug\Lab6Part2.pdb
+D:\userdata\Desktop\CSC LAB\Lab 6\Lab6Part2\Lab6Part2\bin\Debug\Lab6Part2.xml
+D:\userdata\Desktop\CSC LAB\Lab 6\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.Form1.resources
+D:\userdata\Desktop\CSC LAB\Lab 6\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.Resources.resources
+D:\userdata\Desktop\CSC LAB\Lab 6\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.vbproj.GenerateResource.Cache
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab6\student\Lab6Part2\Lab6Part2\bin\Debug\Lab6Part2.exe.config
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab6\student\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.exe
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab6\student\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.xml
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab6\student\Lab6Part2\Lab6Part2\obj\Debug\Lab6Part2.pdb

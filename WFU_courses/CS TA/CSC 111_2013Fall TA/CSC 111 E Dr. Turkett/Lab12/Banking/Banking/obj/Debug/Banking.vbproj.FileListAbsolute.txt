@@ -1,0 +1,14 @@
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Classes\Banking\Banking\bin\Debug\Banking.exe.config
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Classes\Banking\Banking\bin\Debug\Banking.exe
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Classes\Banking\Banking\bin\Debug\Banking.pdb
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Classes\Banking\Banking\bin\Debug\Banking.xml
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Classes\Banking\Banking\obj\Debug\Banking.Form1.resources
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Classes\Banking\Banking\obj\Debug\Banking.Resources.resources
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Classes\Banking\Banking\obj\Debug\Banking.vbproj.GenerateResource.Cache
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Classes\Banking\Banking\obj\Debug\Banking.exe
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Classes\Banking\Banking\obj\Debug\Banking.xml
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Classes\Banking\Banking\obj\Debug\Banking.pdb
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab12\Banking\Banking\bin\Debug\Banking.exe.config
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab12\Banking\Banking\obj\Debug\Banking.exe
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab12\Banking\Banking\obj\Debug\Banking.xml
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab12\Banking\Banking\obj\Debug\Banking.pdb

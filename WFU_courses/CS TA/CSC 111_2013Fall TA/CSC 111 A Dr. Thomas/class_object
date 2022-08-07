@@ -1,0 +1,1181 @@
+
+
+>>> class Bird(oject):
+	have_feather = True
+	way_of_reproduction = 'egg'
+
+
+
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    class Bird(oject):
+NameError: name 'oject' is not defined
+>>> class Bird(object):
+	have_feather = True
+	way_of_reproduction = 'egg'
+
+
+
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    class Bird(object):
+  File "<pyshell#5>", line 2, in Bird
+    have_feathe
+NameError: name 'have_feathe' is not defined
+>>> class Bird(object):
+	have_feather = True
+	way_of_reproduction = 'egg'
+
+
+>>>
+
+>>> summer = Bird()
+>>> summer.way_of_reproduction
+'egg'
+>>>
+>>>
+>>> class Bird(object):
+	have_feather = True
+	way_of_reproduction = 'egg'
+	def move(self, dx, dy):
+		position=[0,0]
+		position[0]=position[0]+dx
+		position[1]=position[1]+dy
+		return position
+
+
+>>> summer = Bird()
+>>> summer.move(5,2)
+[5, 2]
+>>> summer.move(5,20)
+[5, 20]
+>>>
+c
+>>> lass Chinc
+
+Traceback (most recent call last):
+  File "<pyshell#24>", line 1, in <module>
+    c
+NameError: name 'c' is not defined
+>>> class chicken(Bird):
+	way_of_way = 'walk'
+
+
+>>> class Oriole(Bird):
+	way_of_way= 'fly'
+
+
+>>> summer = Chicken()
+
+Traceback (most recent call last):
+  File "<pyshell#31>", line 1, in <module>
+    summer = Chicken()
+NameError: name 'Chicken' is not defined
+>>> summer = chicken()
+>>>
+>>> sumer.have_feather
+
+Traceback (most recent call last):
+  File "<pyshell#34>", line 1, in <module>
+    sumer.have_feather
+NameError: name 'sumer' is not defined
+>>> summer = chicken()
+>>> summer.have_feather
+True
+>>> summer.move(5,5)
+[5, 5]
+>>> summer.way_of_way
+'walk'
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> class Humm
+KeyboardInterrupt
+>>> KeyboardInterrupt
+<type 'exceptions.KeyboardInterrupt'>
+
+>>>
+>>> whos
+
+Traceback (most recent call last):
+  File "<pyshell#47>", line 1, in <module>
+    whos
+NameError: name 'whos' is not defined
+>>> what
+
+Traceback (most recent call last):
+  File "<pyshell#48>", line 1, in <module>
+    what
+NameError: name 'what' is not defined
+>>> whats
+
+Traceback (most recent call last):
+  File "<pyshell#49>", line 1, in <module>
+    whats
+NameError: name 'whats' is not defined
+>>> whose
+
+Traceback (most recent call last):
+  File "<pyshell#50>", line 1, in <module>
+    whose
+NameError: name 'whose' is not defined
+>>>
+>>>
+>>>
+>>>
+>>> class Human(object):
+	laugh = 'hahaha'
+	def show_laugh(self):
+		print self.laugh
+
+
+>>> lilei=human()
+
+Traceback (most recent call last):
+  File "<pyshell#60>", line 1, in <module>
+    lilei=human()
+NameError: name 'human' is not defined
+>>> lilei=Human()
+>>> lilei
+<__main__.Human object at 0x01FF3AB0>
+>>>
+>>> lilei.show_laugh
+<bound method Human.show_laugh of <__main__.Human object at 0x01FF3AB0>>
+>>> print lilei.show_laugh
+<bound method Human.show_laugh of <__main__.Human object at 0x01FF3AB0>>
+>>>
+>>> class Human(object):
+	laugh = 'hahaha'
+	def show_laugh(self):
+		print self.laugh
+	def for i in range(10):
+
+SyntaxError: invalid syntax
+>>> class Human(object):
+	laugh = 'hahaha'
+	def show_laugh(self):
+		print self.laugh
+	def laugh_100th(self):for i in range(10):
+
+SyntaxError: invalid syntax
+>>> class Human(object):
+	laugh = 'hahaha'
+	def show_laugh(self):
+		print self.laugh
+	def laugh_100th(self):
+		for i in range(10):
+			self.show_laugh()
+
+
+>>>
+>>>
+>>> li_lei = Human()
+>>>
+>>> li_lei.laugh
+'hahaha'
+>>>
+>>> li_lei.show_laugh
+<bound method Human.show_laugh of <__main__.Human object at 0x01FF3D90>>
+>>>
+>>> li_lei.laugh_100th
+<bound method Human.laugh_100th of <__main__.Human object at 0x01FF3D90>>
+>>>
+>>>
+>>> class HappyBird(Bird):
+	def __inti__(self,more_words):
+		print 'we are happy  birds',more_words
+
+
+>>> summer HappyBird('Happy, happy! ')
+SyntaxError: invalid syntax
+>>>
+>>>
+>>> summer = HappyBird('Happy, happy! ')
+
+Traceback (most recent call last):
+  File "<pyshell#93>", line 1, in <module>
+    summer = HappyBird('Happy, happy! ')
+TypeError: object.__new__() takes no parameters
+>>> class HappyBird(Bird):
+	def __init__(self,more_words):
+		print 'we are happy  birds',more_words
+
+
+>>> summer = HappyBird('Happy, happy! ')
+we are happy  birds Happy, happy!
+>>>
+>>>
+
+>>>
+
+>>>
+>>> class Human(object):
+	def __init__(self,input_gender):
+		self.gender=input_gender
+	def printGender(self):
+		print self.gender
+
+
+>>> lilei= Human(55)
+>>> print lilei.gender
+55
+>>> lilei.printGender
+<bound method Human.printGender of <__main__.Human object at 0x01FF3B70>>
+>>> lilei.printGender()
+55
+>>>
+>>>
+>>>
+class Human(object):
+	laugh = 'hahaha'
+	def show_laugh(self):
+		print self.laugh
+	def laugh_100th(self):
+		for i in range(10):
+			self.show_laugh()
+
+
+>>> li_lei = Human()
+>>> li_lei.laugh
+'hahaha'
+>>> li_lei.show_laugh()
+hahaha
+>>> li_lei.laugh_100th
+<bound method Human.laugh_100th of <__main__.Human object at 0x01FF3C50>>
+>>> li_lei.laugh_100th()
+hahaha
+hahaha
+hahaha
+hahaha
+hahaha
+hahaha
+hahaha
+hahaha
+hahaha
+hahaha
+>>>
+>>>
+
+>>>
+>>> dir(list)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__delslice__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getslice__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__setslice__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>>
+>>>
+>>> help(list)
+Help on class list in module __builtin__:
+
+class list(object)
+ |  list() -> new list
+ |  list(sequence) -> new list initialized from sequence's items
+ |
+ |  Methods defined here:
+ |
+ |  __add__(...)
+ |      x.__add__(y) <==> x+y
+ |
+ |  __contains__(...)
+ |      x.__contains__(y) <==> y in x
+ |
+ |  __delitem__(...)
+ |      x.__delitem__(y) <==> del x[y]
+ |
+ |  __delslice__(...)
+ |      x.__delslice__(i, j) <==> del x[i:j]
+ |
+ |      Use of negative indices is not supported.
+ |
+ |  __eq__(...)
+ |      x.__eq__(y) <==> x==y
+ |
+ |  __ge__(...)
+ |      x.__ge__(y) <==> x>=y
+ |
+ |  __getattribute__(...)
+ |      x.__getattribute__('name') <==> x.name
+ |
+ |  __getitem__(...)
+ |      x.__getitem__(y) <==> x[y]
+ |
+ |  __getslice__(...)
+ |      x.__getslice__(i, j) <==> x[i:j]
+ |
+ |      Use of negative indices is not supported.
+ |
+ |  __gt__(...)
+ |      x.__gt__(y) <==> x>y
+ |
+ |  __iadd__(...)
+ |      x.__iadd__(y) <==> x+=y
+ |
+ |  __imul__(...)
+ |      x.__imul__(y) <==> x*=y
+ |
+ |  __init__(...)
+ |      x.__init__(...) initializes x; see x.__class__.__doc__ for signature
+ |
+ |  __iter__(...)
+ |      x.__iter__() <==> iter(x)
+ |
+ |  __le__(...)
+ |      x.__le__(y) <==> x<=y
+ |
+ |  __len__(...)
+ |      x.__len__() <==> len(x)
+ |
+ |  __lt__(...)
+ |      x.__lt__(y) <==> x<y
+ |
+ |  __mul__(...)
+ |      x.__mul__(n) <==> x*n
+ |
+ |  __ne__(...)
+ |      x.__ne__(y) <==> x!=y
+ |
+ |  __repr__(...)
+ |      x.__repr__() <==> repr(x)
+ |
+ |  __reversed__(...)
+ |      L.__reversed__() -- return a reverse iterator over the list
+ |
+ |  __rmul__(...)
+ |      x.__rmul__(n) <==> n*x
+ |
+ |  __setitem__(...)
+ |      x.__setitem__(i, y) <==> x[i]=y
+ |
+ |  __setslice__(...)
+ |      x.__setslice__(i, j, y) <==> x[i:j]=y
+ |
+ |      Use  of negative indices is not supported.
+ |
+ |  __sizeof__(...)
+ |      L.__sizeof__() -- size of L in memory, in bytes
+ |
+ |  append(...)
+ |      L.append(object) -- append object to end
+ |
+ |  count(...)
+ |      L.count(value) -> integer -- return number of occurrences of value
+ |
+ |  extend(...)
+ |      L.extend(iterable) -- extend list by appending elements from the iterable
+ |
+ |  index(...)
+ |      L.index(value, [start, [stop]]) -> integer -- return first index of value.
+ |      Raises ValueError if the value is not present.
+ |
+ |  insert(...)
+ |      L.insert(index, object) -- insert object before index
+ |
+ |  pop(...)
+ |      L.pop([index]) -> item -- remove and return item at index (default last).
+ |      Raises IndexError if list is empty or index is out of range.
+ |
+ |  remove(...)
+ |      L.remove(value) -- remove first occurrence of value.
+ |      Raises ValueError if the value is not present.
+ |
+ |  reverse(...)
+ |      L.reverse() -- reverse *IN PLACE*
+ |
+ |  sort(...)
+ |      L.sort(cmp=None, key=None, reverse=False) -- stable sort *IN PLACE*;
+ |      cmp(x, y) -> -1, 0, 1
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |
+ |  __hash__ = None
+ |
+ |  __new__ = <built-in method __new__ of type object at 0x1E1D2B60>
+ |      T.__new__(S, ...) -> a new object with type S, a subtype of T
+
+>>> help(list)
+Help on class list in module __builtin__:
+
+class list(object)
+ |  list() -> new list
+ |  list(sequence) -> new list initialized from sequence's items
+ |
+ |  Methods defined here:
+ |
+ |  __add__(...)
+ |      x.__add__(y) <==> x+y
+ |
+ |  __contains__(...)
+ |      x.__contains__(y) <==> y in x
+ |
+ |  __delitem__(...)
+ |      x.__delitem__(y) <==> del x[y]
+ |
+ |  __delslice__(...)
+ |      x.__delslice__(i, j) <==> del x[i:j]
+ |
+ |      Use of negative indices is not supported.
+ |
+ |  __eq__(...)
+ |      x.__eq__(y) <==> x==y
+ |
+ |  __ge__(...)
+ |      x.__ge__(y) <==> x>=y
+ |
+ |  __getattribute__(...)
+ |      x.__getattribute__('name') <==> x.name
+ |
+ |  __getitem__(...)
+ |      x.__getitem__(y) <==> x[y]
+ |
+ |  __getslice__(...)
+ |      x.__getslice__(i, j) <==> x[i:j]
+ |
+ |      Use of negative indices is not supported.
+ |
+ |  __gt__(...)
+ |      x.__gt__(y) <==> x>y
+ |
+ |  __iadd__(...)
+ |      x.__iadd__(y) <==> x+=y
+ |
+ |  __imul__(...)
+ |      x.__imul__(y) <==> x*=y
+ |
+ |  __init__(...)
+ |      x.__init__(...) initializes x; see x.__class__.__doc__ for signature
+ |
+ |  __iter__(...)
+ |      x.__iter__() <==> iter(x)
+ |
+ |  __le__(...)
+ |      x.__le__(y) <==> x<=y
+ |
+ |  __len__(...)
+ |      x.__len__() <==> len(x)
+ |
+ |  __lt__(...)
+ |      x.__lt__(y) <==> x<y
+ |
+ |  __mul__(...)
+ |      x.__mul__(n) <==> x*n
+ |
+ |  __ne__(...)
+ |      x.__ne__(y) <==> x!=y
+ |
+ |  __repr__(...)
+ |      x.__repr__() <==> repr(x)
+ |
+ |  __reversed__(...)
+ |      L.__reversed__() -- return a reverse iterator over the list
+ |
+ |  __rmul__(...)
+ |      x.__rmul__(n) <==> n*x
+ |
+ |  __setitem__(...)
+ |      x.__setitem__(i, y) <==> x[i]=y
+ |
+ |  __setslice__(...)
+ |      x.__setslice__(i, j, y) <==> x[i:j]=y
+ |
+ |      Use  of negative indices is not supported.
+ |
+ |  __sizeof__(...)
+ |      L.__sizeof__() -- size of L in memory, in bytes
+ |
+ |  append(...)
+ |      L.append(object) -- append object to end
+ |
+ |  count(...)
+ |      L.count(value) -> integer -- return number of occurrences of value
+ |
+ |  extend(...)
+ |      L.extend(iterable) -- extend list by appending elements from the iterable
+ |
+ |  index(...)
+ |      L.index(value, [start, [stop]]) -> integer -- return first index of value.
+ |      Raises ValueError if the value is not present.
+ |
+ |  insert(...)
+ |      L.insert(index, object) -- insert object before index
+ |
+ |  pop(...)
+ |      L.pop([index]) -> item -- remove and return item at index (default last).
+ |      Raises IndexError if list is empty or index is out of range.
+ |
+ |  remove(...)
+ |      L.remove(value) -- remove first occurrence of value.
+ |      Raises ValueError if the value is not present.
+ |
+ |  reverse(...)
+ |      L.reverse() -- reverse *IN PLACE*
+ |
+ |  sort(...)
+ |      L.sort(cmp=None, key=None, reverse=False) -- stable sort *IN PLACE*;
+ |      cmp(x, y) -> -1, 0, 1
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |
+ |  __hash__ = None
+ |
+ |  __new__ = <built-in method __new__ of type object at 0x1E1D2B60>
+ |      T.__new__(S, ...) -> a new object with type S, a subtype of T
+
+>>>
+>>> dir(list)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__delslice__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getslice__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__setslice__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> n1=[1,2,3,4,5]
+>>> n1.count(5)
+1
+>>> n1.index(2
+	 )
+1
+>>> n1[2]
+3
+>>>
+>>>
+>>> n1.append(6)
+>>> n1
+[1, 2, 3, 4, 5, 6]
+>>> n1=[1,2,3,4,5]
+>>>
+
+>>>
+
+>>> n1
+[1, 2, 3, 4, 5]
+>>> n1.append(6)
+>>> n1.pop
+<built-in method pop of list object at 0x022E0350>
+>>> n1.pop()
+6
+>>>
+>>> n1
+[1, 2, 3, 4, 5]
+>>> n1.sort()
+>>> n1
+[1, 2, 3, 4, 5]
+>>>
+>>> n1.insert(0,9)
+>>> n1
+[9, 1, 2, 3, 4, 5]
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> n1.sort()
+>>> n1
+[1, 2, 3, 4, 5, 9]
+>>>
+
+
+
+>>>
+
+>>> print [1,2,3]+[2,4]
+[1, 2, 3, 2, 4]
+>>> print [1,2,3]+[2,4,5]
+[1, 2, 3, 2, 4, 5]
+>>> print [1,2,3]-[2,4]
+
+Traceback (most recent call last):
+  File "<pyshell#170>", line 1, in <module>
+    print [1,2,3]-[2,4]
+TypeError: unsupported operand type(s) for -: 'list' and 'list'
+>>>
+>>>
+>>> dic={'tom':11, 'sam':57, 'lily':100}
+>>> dic
+{'lily': 100, 'sam': 57, 'tom': 11}
+>>>
+>>>
+>>> print type(dic)
+<type 'dict'>
+>>> dic['tom']
+11
+>>> dic['tom']=30
+>>> dic['tom']
+30
+>>>
+>>>
+>>> print dic
+{'lily': 100, 'sam': 57, 'tom': 30}
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> dic["lilei"]=99
+>>> dic
+{'lilei': 99, 'lily': 100, 'sam': 57, 'tom': 30}
+>>>
+>>> for a in dic:
+	print dic[a]
+
+
+99
+100
+57
+30
+>>> b='lily'
+>>> for b in dic:
+	print dic[b]
+
+
+99
+100
+57
+30
+>>>
+>>> for b in dic[key]:
+	print dic[b]
+
+
+
+Traceback (most recent call last):
+  File "<pyshell#201>", line 1, in <module>
+    for b in dic[key]:
+NameError: name 'key' is not defined
+>>> dic.key()
+
+Traceback (most recent call last):
+  File "<pyshell#202>", line 1, in <module>
+    dic.key()
+AttributeError: 'dict' object has no attribute 'key'
+>>>
+
+>>> dic
+{'lilei': 99, 'lily': 100, 'sam': 57, 'tom': 30}
+>>>
+>>>
+>>> print dic.keys()
+['lilei', 'lily', 'sam', 'tom']
+>>> keys()
+
+Traceback (most recent call last):
+  File "<pyshell#208>", line 1, in <module>
+    keys()
+NameError: name 'keys' is not defined
+>>> dic.keys()
+['lilei', 'lily', 'sam', 'tom']
+>>>
+>>>
+>>>
+>>> dic.values()
+[99, 100, 57, 30]
+>>>
+>>>
+
+>>> dic.items()
+[('lilei', 99), ('lily', 100), ('sam', 57), ('tom', 30)]
+
+>>>
+>>>
+
+>>> dec dic['to']
+SyntaxError: invalid syntax
+>>> del dic['to']
+
+Traceback (most recent call last):
+  File "<pyshell#220>", line 1, in <module>
+    del dic['to']
+KeyError: 'to'
+>>>
+>>> del dic['tom']
+>>>
+>>>
+>>> help open
+SyntaxError: invalid syntax
+>>> ?open
+SyntaxError: invalid syntax
+>>> help open()
+SyntaxError: invalid syntax
+>>> dir(open)
+['__call__', '__class__', '__cmp__', '__delattr__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__name__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__self__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
+>>>
+>>>
+>>> help open
+SyntaxError: invalid syntax
+>>> help list
+SyntaxError: invalid syntax
+>>> help(open)
+Help on built-in function open in module __builtin__:
+
+open(...)
+    open(name[, mode[, buffering]]) -> file object
+
+    Open a file using the file() type, returns a file object.  This is the
+    preferred way to open a file.
+
+>>>
+>>>
+>>> f=open('SQL.txt','r')
+
+Traceback (most recent call last):
+  File "<pyshell#236>", line 1, in <module>
+    f=open('SQL.txt','r')
+IOError: [Errno 2] No such file or directory: 'SQL.txt'
+>>> f=open("SQL.txt","r")
+
+Traceback (most recent call last):
+  File "<pyshell#237>", line 1, in <module>
+    f=open("SQL.txt","r")
+IOError: [Errno 2] No such file or directory: 'SQL.txt'
+>>>
+KeyboardInterrupt
+>>> f=open("intern list.txt","r")
+
+Traceback (most recent call last):
+  File "<pyshell#238>", line 1, in <module>
+    f=open("intern list.txt","r")
+IOError: [Errno 2] No such file or directory: 'intern list.txt'
+>>>
+>>>
+>>> pwd
+
+Traceback (most recent call last):
+  File "<pyshell#241>", line 1, in <module>
+    pwd
+NameError: name 'pwd' is not defined
+>>>
+>>>
+>>> f=open("D:/userdata/Desktop/intern list.txt","r")
+>>> content=f.read()
+>>> content
+'epic: http://epicsoftware.com/index.php/about_us_interns/\n\n\nCTCI: Crack the coding interview\ncollabedit.com\n\n1010321722933\n\n\n\nwhich g++\n\nsudo apt-get install g++\n\ngedit XXX.cpp\n\ng++ -o helloworld helloworld.cpp\n\n./helloworld\n\nhelp\n\ncd (Tab)\n\n\n\n\n\n\n\n\n\n\nOh, say can you see by the dawn\'s early light\nWhat so proudly we hailed at the twilight\'s last gleaming?\nWhose broad stripes and bright stars thru the perilous fight,\nO\'er the ramparts we watched were so gallantly streaming?\nAnd the rocket\'s red glare, the bombs bursting in air,\nGave proof through the night that our flag was still there.\nOh, say does that star-spangled banner yet wave\nO\'er the land of the free and the home of the brave?\n\n\n\n\nOn the shore, dimly seen through the mists of the deep,\nWhere the foe\'s haughty host in dread silence reposes,\nWhat is that which the breeze, o\'er the towering steep,\nAs it fitfully blows, half conceals, half discloses?\nNow it catches the gleam of the morning\'s first beam,\nIn full glory reflected now shines in the stream:\n\'Tis the star-spangled banner! Oh long may it wave\nO\'er the land of the free and the home of the brave!\n\nAnd where is that band who so vauntingly swore\nThat the havoc of war and the battle\'s confusion,\nA home and a country should leave us no more!\nTheir blood has washed out their foul footsteps\' pollution.\nNo refuge could save the hireling and slave\nFrom the terror of flight, or the gloom of the grave:\nAnd the star-spangled banner in triumph doth wave\nO\'er the land of the free and the home of the brave!\n\nOh! thus be it ever, when freemen shall stand\nBetween their loved home and the war\'s desolation!\nBlest with victory and peace, may the heav\'n rescued land\nPraise the Power that hath made and preserved us a nation.\nThen conquer we must, when our cause it is just,\nAnd this be our motto: "In God is our trust."\nAnd the star-spangled banner in triumph shall wave\nO\'er the land of the free and the home of the brave!\n\n\n\n'
+>>> f.readline(0
+	   )
+''
+>>> f.readline()
+''
+>>>
+>>> content=f.readlines()
+>>>
+>>>
+>>> content
+[]
+>>> print content
+[]
+>>> content=f.read()
+>>> content
+''
+>>> print content
+
+>>> content=f.read()
+>>> content
+''
+>>> f=open("D:/userdata/Desktop/intern list.txt","r")
+>>> content=f.read()
+>>> content
+'epic: http://epicsoftware.com/index.php/about_us_interns/\n\n\nCTCI: Crack the coding interview\ncollabedit.com\n\n1010321722933\n\n\n\nwhich g++\n\nsudo apt-get install g++\n\ngedit XXX.cpp\n\ng++ -o helloworld helloworld.cpp\n\n./helloworld\n\nhelp\n\ncd (Tab)\n\n\n\n\n\n\n\n\n\n\nOh, say can you see by the dawn\'s early light\nWhat so proudly we hailed at the twilight\'s last gleaming?\nWhose broad stripes and bright stars thru the perilous fight,\nO\'er the ramparts we watched were so gallantly streaming?\nAnd the rocket\'s red glare, the bombs bursting in air,\nGave proof through the night that our flag was still there.\nOh, say does that star-spangled banner yet wave\nO\'er the land of the free and the home of the brave?\n\n\n\n\nOn the shore, dimly seen through the mists of the deep,\nWhere the foe\'s haughty host in dread silence reposes,\nWhat is that which the breeze, o\'er the towering steep,\nAs it fitfully blows, half conceals, half discloses?\nNow it catches the gleam of the morning\'s first beam,\nIn full glory reflected now shines in the stream:\n\'Tis the star-spangled banner! Oh long may it wave\nO\'er the land of the free and the home of the brave!\n\nAnd where is that band who so vauntingly swore\nThat the havoc of war and the battle\'s confusion,\nA home and a country should leave us no more!\nTheir blood has washed out their foul footsteps\' pollution.\nNo refuge could save the hireling and slave\nFrom the terror of flight, or the gloom of the grave:\nAnd the star-spangled banner in triumph doth wave\nO\'er the land of the free and the home of the brave!\n\nOh! thus be it ever, when freemen shall stand\nBetween their loved home and the war\'s desolation!\nBlest with victory and peace, may the heav\'n rescued land\nPraise the Power that hath made and preserved us a nation.\nThen conquer we must, when our cause it is just,\nAnd this be our motto: "In God is our trust."\nAnd the star-spangled banner in triumph shall wave\nO\'er the land of the free and the home of the brave!\n\n\n\n'
+>>> content=f.readlines()
+>>> content
+[]
+>>>
+>>>
+>>> content=f.read()
+>>>
+>>> content
+''
+>>>
+>>> ''
+''
+
+>>>
+
+
+
+>>>
+
+>>>
+
+
+
+
+>>>
+>>>
+>>> s='abcdefghijklmn'
+>>> s
+'abcdefghijklmn'
+>>>
+
+
+>>>
+
+>>>
+
+
+>>> for i in range(0,len(s),s):
+	s[i]
+
+
+
+Traceback (most recent call last):
+  File "<pyshell#285>", line 1, in <module>
+    for i in range(0,len(s),s):
+TypeError: range() integer step argument expected, got str.
+>>> for i in range(0,len(s),s):
+	print s[i]
+
+
+
+Traceback (most recent call last):
+  File "<pyshell#287>", line 1, in <module>
+    for i in range(0,len(s),s):
+TypeError: range() integer step argument expected, got str.
+>>> for i in range(0,len(s),2):
+	s[i]
+
+
+'a'
+'c'
+'e'
+'g'
+'i'
+'k'
+'m'
+>>> enumerate(s)
+<enumerate object at 0x01FF2FA8>
+>>> enumerate(s[1])
+<enumerate object at 0x022B3FD0>
+>>> s.enumerate()
+
+Traceback (most recent call last):
+  File "<pyshell#292>", line 1, in <module>
+    s.enumerate()
+AttributeError: 'str' object has no attribute 'enumerate'
+>>>
+>>>
+>>> for (index,char) in enumerate(s)
+SyntaxError: invalid syntax
+>>> for (index,char) in enumerate(s):
+	print index
+	print char
+
+
+0
+a
+1
+b
+2
+c
+3
+d
+4
+e
+5
+f
+6
+g
+7
+h
+8
+i
+9
+j
+10
+k
+11
+l
+12
+m
+13
+n
+>>> for (index,char) in enumerate(s):
+	print index, char
+
+
+0 a
+1 b
+2 c
+3 d
+4 e
+5 f
+6 g
+7 h
+8 i
+9 j
+10 k
+11 l
+12 m
+13 n
+>>> dir(enumerate)
+['__class__', '__delattr__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__iter__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'next']
+>>> ta=[1,2,3]
+>>> tb=[9,8,7]
+>>> tc=['a','b','c']
+>>> for (a,b,c) in zip(ta,tb,tc):
+	print (a,b,c)
+
+
+(1, 9, 'a')
+(2, 8, 'b')
+(3, 7, 'c')
+>>> for (a,b,c) in zip(ta,tb,tc):
+	print a,b,c
+
+
+1 9 a
+2 8 b
+3 7 c
+>>> for (a,b,c) in zip(ta,tb,tc):
+	a,b,c
+
+
+(1, 9, 'a')
+(2, 8, 'b')
+(3, 7, 'c')
+>>> def f(a,b,c):
+	print a,b,c
+
+
+>>> f(1,2,3)
+1 2 3
+>>>
+>>> f(1,c=2,b=3)
+1 3 2
+>>>
+>>> def f(a,b,c=10):
+	print a,b,c
+
+
+>>>
+>>> f(3,2)
+3 2 10
+>>> f(3,2,3)
+3 2 3
+>>>
+>>> f(3,a=2,3)
+SyntaxError: non-keyword arg after keyword arg
+>>> f(3,c=2,b=3)
+3 3 2
+>>> def func(*name):
+	print type(name)
+	print name
+
+
+>>> func(1,3,4,5,6)
+<type 'tuple'>
+(1, 3, 4, 5, 6)
+>>> func(1,3)
+<type 'tuple'>
+(1, 3)
+>>>
+>>>
+>>> def funcc(**dict):
+	print type(dict)
+	print dict
+
+
+>>> funcc(a=1,b=3,b=55)
+SyntaxError: keyword argument repeated
+>>> funcc(a=1,b=3,d=55)
+<type 'dict'>
+{'a': 1, 'b': 3, 'd': 55}
+>>>
+>>> f
+<function f at 0x02016FB0>
+>>> f(0
+  )
+
+Traceback (most recent call last):
+  File "<pyshell#345>", line 1, in <module>
+    f(0
+TypeError: f() takes at least 2 arguments (1 given)
+>>>
+>>>
+>>> f()
+
+Traceback (most recent call last):
+  File "<pyshell#348>", line 1, in <module>
+    f()
+TypeError: f() takes at least 2 arguments (0 given)
+>>>
+
+>>>
+
+>>> f
+<function f at 0x02016FB0>
+
+>>>
+>>>
+>>> f(1,4)
+1 4 10
+>>> def f(a,b,c):
+	print a,b,c
+
+
+>>> args(1,4,3)
+
+Traceback (most recent call last):
+  File "<pyshell#358>", line 1, in <module>
+    args(1,4,3)
+NameError: name 'args' is not defined
+>>> fargs=(1,4,3)
+>>> f(*fargs)
+1 4 3
+>>>
+>>> dic{'bbb':1,'ccc':d,'aaa':dfa}
+SyntaxError: invalid syntax
+>>> dic={'bbb':1,'ccc':d,'aaa':dfa}
+
+Traceback (most recent call last):
+  File "<pyshell#363>", line 1, in <module>
+    dic={'bbb':1,'ccc':d,'aaa':dfa}
+NameError: name 'd' is not defined
+>>> dic{'bbb':1,'ccc':'dafda','aaa':dfa}
+SyntaxError: invalid syntax
+>>>
+>>>
+>>> dic={'bbb':1,'ccc':'dafda','aaa':dfa}
+
+Traceback (most recent call last):
+  File "<pyshell#367>", line 1, in <module>
+    dic={'bbb':1,'ccc':'dafda','aaa':dfa}
+NameError: name 'dfa' is not defined
+>>>
+>>>
+>>> d=1
+>>> dic={'bbb':1,'ccc':d,'aaa':dfa}
+
+Traceback (most recent call last):
+  File "<pyshell#371>", line 1, in <module>
+    dic={'bbb':1,'ccc':d,'aaa':dfa}
+NameError: name 'dfa' is not defined
+>>> dic={'bbb':1,'ccc':3,'aaa':dfa}
+
+Traceback (most recent call last):
+  File "<pyshell#372>", line 1, in <module>
+    dic={'bbb':1,'ccc':3,'aaa':dfa}
+NameError: name 'dfa' is not defined
+>>> dic={'bbb':1,'ccc':'dafda','aaa':'dfa'}
+>>>
+>>> dic
+{'aaa': 'dfa', 'bbb': 1, 'ccc': 'dafda'}
+>>>
+
+
+>>>
+
+
+>>> f(**dic)
+
+Traceback (most recent call last):
+  File "<pyshell#378>", line 1, in <module>
+    f(**dic)
+TypeError: f() got an unexpected keyword argument 'aaa'
+>>>
+>>>
+>>> dic
+{'aaa': 'dfa', 'bbb': 1, 'ccc': 'dafda'}
+>>>
+>>> def f(a,b,c):
+	print a,b,c
+
+
+>>> fargs=(1,4,3)
+>>> f(*fargs)
+1 4 3
+>>> f(**dic)
+
+Traceback (most recent call last):
+  File "<pyshell#388>", line 1, in <module>
+    f(**dic)
+TypeError: f() got an unexpected keyword argument 'aaa'
+>>>
+>>> dic
+{'aaa': 'dfa', 'bbb': 1, 'ccc': 'dafda'}
+>>> dic={'a':1,'b':'dafda','c':'dfa'}
+KeyboardInterrupt
+>>> dic={'a':1,'b':'dafda','c':'dfa'}
+>>>
+>>>
+>>> f(**dic)
+1 dafda dfa
+>>>
+>>>
+>>>
+>>> def gen():
+	a=100
+	yield a
+	a = a*8
+	yield a
+	yield 1000
+
+
+>>> for i in gen():
+	print i
+
+
+100
+800
+1000
+>>> def gen2():
+	for i in range(4):
+		yield i
+
+
+>>>
+>>> gen2()
+<generator object gen2 at 0x01FFF558>
+>>>
+>>>
+>>> G=(x for x in range(4))
+>>> G
+<generator object <genexpr> at 0x022B3FA8>
+>>> x
+
+Traceback (most recent call last):
+  File "<pyshell#419>", line 1, in <module>
+    x
+NameError: name 'x' is not defined
+>>> L=[]
+>>> for x in range(10):
+	L.append(x**2)
+
+
+>>> L
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>>
+>>>
+
+>>> K=[x**2 for x in range(10)]
+>>> K
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>> gen
+<function gen at 0x02016FB0>
+>>> for i in gen2():
+	print i
+
+
+0
+1
+2
+3
+>>>
+KeyboardInterrupt
+>>> for i in G:
+	print i
+
+
+0
+1
+2
+3
+>>> print G
+<generator object <genexpr> at 0x022B3FA8>
+>>> print G()
+
+Traceback (most recent call last):
+  File "<pyshell#435>", line 1, in <module>
+    print G()
+TypeError: 'generator' object is not callable
+>>>

@@ -1,0 +1,10 @@
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab10\Lab10Program1\Lab10Program1\bin\Debug\Lab10Program1.exe.config
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab10\Lab10Program1\Lab10Program1\bin\Debug\Lab10Program1.exe
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab10\Lab10Program1\Lab10Program1\bin\Debug\Lab10Program1.pdb
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab10\Lab10Program1\Lab10Program1\bin\Debug\Lab10Program1.xml
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab10\Lab10Program1\Lab10Program1\obj\Debug\Lab10Program1.Form1.resources
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab10\Lab10Program1\Lab10Program1\obj\Debug\Lab10Program1.Resources.resources
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab10\Lab10Program1\Lab10Program1\obj\Debug\Lab10Program1.vbproj.GenerateResource.Cache
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab10\Lab10Program1\Lab10Program1\obj\Debug\Lab10Program1.exe
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab10\Lab10Program1\Lab10Program1\obj\Debug\Lab10Program1.xml
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab10\Lab10Program1\Lab10Program1\obj\Debug\Lab10Program1.pdb

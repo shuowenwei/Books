@@ -1,0 +1,20 @@
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab3Part2\Lab3Part2\bin\Debug\Lab3Part2.exe.config
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab3Part2\Lab3Part2\bin\Debug\Lab3Part2.exe
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab3Part2\Lab3Part2\bin\Debug\Lab3Part2.pdb
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab3Part2\Lab3Part2\bin\Debug\Lab3Part2.xml
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab3Part2\Lab3Part2\obj\Debug\Lab3Part2.Form1.resources
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab3Part2\Lab3Part2\obj\Debug\Lab3Part2.Resources.resources
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab3Part2\Lab3Part2\obj\Debug\Lab3Part2.vbproj.GenerateResource.Cache
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab3Part2\Lab3Part2\obj\Debug\Lab3Part2.exe
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab3Part2\Lab3Part2\obj\Debug\Lab3Part2.xml
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab3Part2\Lab3Part2\obj\Debug\Lab3Part2.pdb
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Part2\Lab3Part2\bin\Debug\Lab3Part2.exe.config
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Part2\Lab3Part2\obj\Debug\Lab3Part2.exe
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Part2\Lab3Part2\obj\Debug\Lab3Part2.xml
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Part2\Lab3Part2\obj\Debug\Lab3Part2.pdb
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Part2\Lab3Part2\bin\Debug\Lab3Part2.exe
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Part2\Lab3Part2\bin\Debug\Lab3Part2.pdb
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Part2\Lab3Part2\bin\Debug\Lab3Part2.xml
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Part2\Lab3Part2\obj\Debug\Lab3Part2.Form1.resources
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Part2\Lab3Part2\obj\Debug\Lab3Part2.Resources.resources
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Part2\Lab3Part2\obj\Debug\Lab3Part2.vbproj.GenerateResource.Cache

@@ -1,0 +1,24 @@
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab7\Lab7Program1\Lab7Program1\bin\Debug\Lab7Program1.exe.config
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab7\Lab7Program1\Lab7Program1\bin\Debug\Lab7Program1.exe
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab7\Lab7Program1\Lab7Program1\bin\Debug\Lab7Program1.pdb
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab7\Lab7Program1\Lab7Program1\bin\Debug\Lab7Program1.xml
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab7\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.Form1.resources
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab7\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.Resources.resources
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab7\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.vbproj.GenerateResource.Cache
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab7\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.exe
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab7\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.xml
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab7\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.pdb
+C:\Users\zielpj13\Documents\Visual Studio 2012\Projects\Lab7Program1\Lab7Program1\bin\Debug\Lab7Program1.exe.config
+C:\Users\zielpj13\Documents\Visual Studio 2012\Projects\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.exe
+C:\Users\zielpj13\Documents\Visual Studio 2012\Projects\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.xml
+C:\Users\zielpj13\Documents\Visual Studio 2012\Projects\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.pdb
+C:\Users\zielpj13\Documents\Visual Studio 2012\Projects\Lab7Program1\Lab7Program1\bin\Debug\Lab7Program1.exe
+C:\Users\zielpj13\Documents\Visual Studio 2012\Projects\Lab7Program1\Lab7Program1\bin\Debug\Lab7Program1.pdb
+C:\Users\zielpj13\Documents\Visual Studio 2012\Projects\Lab7Program1\Lab7Program1\bin\Debug\Lab7Program1.xml
+C:\Users\zielpj13\Documents\Visual Studio 2012\Projects\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.Form1.resources
+C:\Users\zielpj13\Documents\Visual Studio 2012\Projects\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.Resources.resources
+C:\Users\zielpj13\Documents\Visual Studio 2012\Projects\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.vbproj.GenerateResource.Cache
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab7\student\Lab7Program1\Lab7Program1\bin\Debug\Lab7Program1.exe.config
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab7\student\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.exe
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab7\student\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.xml
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab7\student\Lab7Program1\Lab7Program1\obj\Debug\Lab7Program1.pdb

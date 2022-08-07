@@ -1,0 +1,20 @@
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab12\Lab12Program1\Lab12Program1\bin\Debug\Lab12Program1.exe.config
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab12\Lab12Program1\Lab12Program1\obj\Debug\Lab12Program1.Form1.resources
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab12\Lab12Program1\Lab12Program1\obj\Debug\Lab12Program1.Resources.resources
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab12\Lab12Program1\Lab12Program1\obj\Debug\Lab12Program1.vbproj.GenerateResource.Cache
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab12\Lab12Program1\Lab12Program1\bin\Debug\Lab12Program1.exe
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab12\Lab12Program1\Lab12Program1\bin\Debug\Lab12Program1.pdb
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab12\Lab12Program1\Lab12Program1\bin\Debug\Lab12Program1.xml
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab12\Lab12Program1\Lab12Program1\obj\Debug\Lab12Program1.exe
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab12\Lab12Program1\Lab12Program1\obj\Debug\Lab12Program1.xml
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab12\Lab12Program1\Lab12Program1\obj\Debug\Lab12Program1.pdb
+D:\userdata\Downloads\Lab12Program1\Lab12Program1\Lab12Program1\bin\Debug\Lab12Program1.exe.config
+D:\userdata\Downloads\Lab12Program1\Lab12Program1\Lab12Program1\obj\Debug\Lab12Program1.exe
+D:\userdata\Downloads\Lab12Program1\Lab12Program1\Lab12Program1\obj\Debug\Lab12Program1.xml
+D:\userdata\Downloads\Lab12Program1\Lab12Program1\Lab12Program1\obj\Debug\Lab12Program1.pdb
+D:\userdata\Downloads\Lab12Program1\Lab12Program1\Lab12Program1\bin\Debug\Lab12Program1.exe
+D:\userdata\Downloads\Lab12Program1\Lab12Program1\Lab12Program1\bin\Debug\Lab12Program1.pdb
+D:\userdata\Downloads\Lab12Program1\Lab12Program1\Lab12Program1\bin\Debug\Lab12Program1.xml
+D:\userdata\Downloads\Lab12Program1\Lab12Program1\Lab12Program1\obj\Debug\Lab12Program1.Form1.resources
+D:\userdata\Downloads\Lab12Program1\Lab12Program1\Lab12Program1\obj\Debug\Lab12Program1.Resources.resources
+D:\userdata\Downloads\Lab12Program1\Lab12Program1\Lab12Program1\obj\Debug\Lab12Program1.vbproj.GenerateResource.Cache

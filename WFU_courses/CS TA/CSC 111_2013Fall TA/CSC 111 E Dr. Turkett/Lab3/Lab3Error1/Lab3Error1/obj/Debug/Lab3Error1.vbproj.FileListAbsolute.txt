@@ -1,0 +1,20 @@
+c:\users\turketwh\documents\visual studio 2012\Projects\Lab3Error1\Lab3Error1\bin\Debug\Lab3Error1.exe.config
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab3Error1\Lab3Error1\bin\Debug\Lab3Error1.exe
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab3Error1\Lab3Error1\bin\Debug\Lab3Error1.pdb
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab3Error1\Lab3Error1\bin\Debug\Lab3Error1.xml
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab3Error1\Lab3Error1\obj\Debug\Lab3Error1.Form1.resources
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab3Error1\Lab3Error1\obj\Debug\Lab3Error1.Resources.resources
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab3Error1\Lab3Error1\obj\Debug\Lab3Error1.vbproj.GenerateResource.Cache
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab3Error1\Lab3Error1\obj\Debug\Lab3Error1.exe
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab3Error1\Lab3Error1\obj\Debug\Lab3Error1.xml
+C:\Users\turketwh\Documents\Visual Studio 2012\Projects\Lab3Error1\Lab3Error1\obj\Debug\Lab3Error1.pdb
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Error1\Lab3Error1\bin\Debug\Lab3Error1.exe.config
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Error1\Lab3Error1\obj\Debug\Lab3Error1.exe
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Error1\Lab3Error1\obj\Debug\Lab3Error1.xml
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Error1\Lab3Error1\obj\Debug\Lab3Error1.pdb
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Error1\Lab3Error1\obj\Debug\Lab3Error1.Form1.resources
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Error1\Lab3Error1\obj\Debug\Lab3Error1.Resources.resources
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Error1\Lab3Error1\obj\Debug\Lab3Error1.vbproj.GenerateResource.Cache
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Error1\Lab3Error1\bin\Debug\Lab3Error1.exe
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Error1\Lab3Error1\bin\Debug\Lab3Error1.pdb
+D:\userdata\Desktop\TA\CSC 111 E Dr. Turkett\Lab3\Lab3Error1\Lab3Error1\bin\Debug\Lab3Error1.xml
