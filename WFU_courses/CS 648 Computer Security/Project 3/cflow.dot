@@ -1,0 +1,390 @@
+digraph G {
+node [peripheries=2 style="filled,rounded" fontname="Vera Sans YuanTi Mono" color="#eecc80"];
+rankdir=LR;
+label="csc348_cinik.c"
+main [shape=box];
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->open
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->time
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->printf
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->srand
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->getpid
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->memset
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->audp_listen
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_listen->socket
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_listen->htons
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_listen->bind
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_listen->fcntl
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_listen->setsockopt
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->aerror
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->malloc
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->aresolve
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+aresolve->inet_addr
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+aresolve->gethostbyname
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+aresolve->bcopy
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->relay
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+relay->memset
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+relay->conv
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+conv->memset
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+conv->strcpy
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+conv->inet_ntoa
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+conv->printf
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+relay->audp_relay
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+audp_relay->inet_addr
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+audp_relay->gethostbyname
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+audp_relay->bcopy
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+audp_relay->htons
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+relay->lowsend
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+lowsend->malloc
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+lowsend->memset
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+lowsend->in_cksum
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+lowsend->newrsa
+node [color="#eecc80" shape=diamond];edge [color="#eecc80"];
+newrsa->rand
+node [color="#eecc80" shape=diamond];edge [color="#eecc80"];
+newrsa->usersa
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+lowsend->memcpy
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+lowsend->time
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+lowsend->htons
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+lowsend->audp_send
+node [color="#eecc80" shape=diamond];edge [color="#eecc80"];
+audp_send->sendtoX
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+lowsend->FREE
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->rand
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->signal
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->nas
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->FD_ZERO
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->FD_SET
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->select
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->waitpid
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->FREE
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->segment
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+segment->lowsend
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+segment->rand
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+segment->memset
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+segment->conv
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+segment->audp_relay
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+segment->audp_send
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+segment->FREE
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->gettimeout
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->delqueue
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->conv
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->audp_relay
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->audp_send
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->syncmode
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->broadcast
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+broadcast->malloc
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+broadcast->memset
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+broadcast->rand
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+broadcast->newseq
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+newseq->rand
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+newseq->useseq
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+broadcast->memcpy
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+broadcast->segment
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+broadcast->FREE
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->FD_ISSET
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->sprintf
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->atcp_sync_connect
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+atcp_sync_connect->socket
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+atcp_sync_connect->inet_addr
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+atcp_sync_connect->gethostbyname
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+atcp_sync_connect->bcopy
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+atcp_sync_connect->htons
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+atcp_sync_connect->fcntl
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->atcp_sync_check
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+atcp_sync_check->connectX
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+connectX->rand
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->atcp_close
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+atcp_close->close
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->strcmp
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->mfork
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+mfork->fork
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+mfork->malloc
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+mfork->FREE
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->exploit
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+exploit->alarm
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+exploit->exit
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->exit
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->newseq
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->relayclient
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+relayclient->lowsend
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->atcp_send
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+atcp_send->writeX
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->atcp_recv
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+atcp_recv->readX
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->memcpy
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->audp_recv
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_recv->memcpy
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_recv->recvfromX
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->in_cksum
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->usersa
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->addrsa
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->abind
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+abind->htons
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+abind->bind
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->popen
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->fgets
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->feof
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->strlen
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->pclose
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->senderror
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+senderror->strdup
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+senderror->memset
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+senderror->newseq
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+senderror->strlen
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+senderror->malloc
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+senderror->FREE
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+senderror->memcpy
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+senderror->relayclient
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->useseq
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->addseq
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->syncm
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+syncm->malloc
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+syncm->memset
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+syncm->newseq
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+syncm->memcpy
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+syncm->relay
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+syncm->relayclient
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+syncm->FREE
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->inet_addr
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->htons
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->isreal
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+isreal->conv
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+isreal->strlen
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+isreal->atoi
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->waitforqueues
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+waitforqueues->mfork
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+waitforqueues->sleep
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+waitforqueues->gettimeout
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->socket
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->fcntl
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->sendto
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->close
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->connectX
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->StartScan
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+StartScan->popen
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+StartScan->memset
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+StartScan->fgets
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+StartScan->feof
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+StartScan->strlen
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+StartScan->strncmp
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+StartScan->ScanFile
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->fopen
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->memset
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->fseek
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->fread
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->feof
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->ftell
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->fgetc
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->isgood
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->strlen
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->strcmp
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->strncmp
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->islisten
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->AddToList
+node [color="#eecc80" shape=diamond];edge [color="#eecc80"];
+AddToList->strcmp
+node [color="#eecc80" shape=diamond];edge [color="#eecc80"];
+AddToList->malloc
+node [color="#eecc80" shape=diamond];edge [color="#eecc80"];
+AddToList->strdup
+node [color="#80ccee" shape=hexagon];edge [color="#80ccee"];
+ScanFile->fclose
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->audp_setup
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_setup->socket
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_setup->inet_addr
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_setup->gethostbyname
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_setup->bcopy
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_setup->htons
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_setup->fcntl
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->audp_close
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+audp_close->close
+node [color="#eecc80" shape=ellipse];edge [color="#eecc80"];
+main->addserver
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+addserver->malloc
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+addserver->rand
+node [color="#ccee80" shape=octagon];edge [color="#ccee80"];
+addserver->FREE
+}
