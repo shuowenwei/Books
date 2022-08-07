@@ -1,0 +1,19 @@
+creat procedure printHotelStatus()
+begin
+  declare mh int;
+  declare h int;
+  declare x int;
+  declare toprint text;
+  select max(hotelNumber) into mh from hotel;
+  set h=1;
+  while(h<=mh) do
+     select count(*) into x from booking where hotelNUmber=h;
+     if x=0 then set toprint=concat("Hotel", h, "Has no reservations");
+     else topint=concat("Hotel", h, "has reservations");
+     end if;
+     select topint;
+     set h=h+1;
+  end while;
+end
+
+
