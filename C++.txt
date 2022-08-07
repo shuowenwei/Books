@@ -1,0 +1,71 @@
+/*Definition:Let A[1..n] be an array of 'n' distinct numbers. If i < j and A > A[j], then the pair (i,j) is called an inversion of A. 
+*/ 
+#include <iostream> 
+#include <stdlib.h> 
+#include <vector> 
+#include <fstream> 
+using namespace std; 
+long long inversionNum = 0; 
+vector<int> mergeSort(vector<int> &i); 
+vector<int> merge(vector<int> &left, vector<int> &right); 
+int main(){ 
+    //read file,initial a integer vector 
+    vector<int> ivec(100000,0); 
+    vector<string> svec(100000); 
+    ifstream fin("beforeSort"); 
+    for (vector<string>::iterator sx = svec.begin(); sx != svec.end(); ++sx) 
+        getline(fin, *sx); 
+    fin.close(); 
+    //change it into integer 
+    for (int count = 0; count < 100000; ++count) 
+        ivec[count] = atoi(svec[count].c_str()); 
+    //merge sort 
+
+    vector<int> result = mergeSort(ivec); 
+    ofstream fout("afterSort"); 
+    for(vector<int>::iterator rx = result.begin(); rx != result.end(); ++rx) 
+        fout << *rx << endl; 
+    fout.close(); 
+
+    cout << "The number of inversions is:" << inversionNum << endl; 
+
+    return 0; 
+} 
+
+vector<int> mergeSort(vector<int>& i) { 
+    if ( i.size() == 1) 
+        return vector<int >(1, i[0]); 
+    if ( i.size() == 0){ 
+        return vector<int >(); 
+    } 
+
+    vector<int>::iterator mid = i.begin() + i.size() / 2; 
+    vector<int> left(i.begin(), mid); 
+    vector<int> right(mid, i.end()); 
+
+    left = mergeSort( left ); 
+    right = mergeSort( right ); 
+
+    return merge( left, right); 
+} 
+
+vector<int> merge(vector<int> &left, vector<int> &right) { 
+    vector<int> result; 
+    vector<int>::size_type li = 0, ri = 0; 
+    while ( li < left.size() && ri < right.size()) { 
+        if ( left[li] > right[ri] ) {   //inversion 
+            result.push_back(right[ri++]); 
+            inversionNum += (left.size() - li); 
+        } 
+        else { 
+            result.push_back(left[li++]); 
+        } 
+    } 
+    while ( li < left.size() ) { 
+        result.push_back(left[li++]); 
+    } 
+    while ( ri < right.size() ) { 
+        result.push_back(right[ri++]); 
+    } 
+    return result; 
+} 
