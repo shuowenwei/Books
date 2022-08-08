@@ -1,0 +1,247 @@
+import java.awt.List;
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+import javazoom.jl.player.Player;
+
+
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+
+public class MusicPlayer extends JFrame { 
+
+	/*
+	private static String getPathFromArgs(String[] args){
+        String s = null;
+
+        try{
+            s = args[0];
+        }catch(Exception e){
+            //no arguements
+        }
+
+        return s;
+    }
+    */
+    /**
+     * Gets user command-line input and tries to load a MP3 from the path given.
+     * @param MU Music Object Reference
+     */
+/*	
+    private static void loadMP3(Music MU){
+        boolean validPath;
+        String filePath;
+        Scanner inn = new Scanner(System.in);
+        
+        do{
+            System.out.print("Path to .mp3: ");
+            filePath = inn.nextLine();
+            validPath = MU.loadFile(filePath);
+            if(!validPath){
+                System.out.println("Invalid path!");
+            }
+        }while(!validPath);
+            
+    }
+*/
+
+	public static void main(String args[]) { 
+		// Declare variables
+		
+		//Player player; 				// object that can actually play, pause, etc a song
+		Music MU = new Music();
+		//File file; 					// object that manipulates files
+		JFileChooser fileChooser;	// object for choosing files from hard drive
+						
+		//FileInputStream fis;
+		//BufferedInputStream bis;
+		
+		int result;
+
+		// Initialize needed variables and objects
+		fileChooser = new JFileChooser();   // Create an object to select songs through a GUI
+		
+		//fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);  // Tell object to select only files
+		
+		fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);  // Tell object to select only files
+		
+		//System.out.println("fileChooser"+fileChooser);
+		
+		// Tell user to select a song
+		JOptionPane.showMessageDialog(null,"Please select a song","Song Selection", JOptionPane.INFORMATION_MESSAGE);
+
+		// Pop up the file chooser dialog
+		result = fileChooser.showOpenDialog(null);  // HINT: This method returns one of the 
+                                                    //  following integers: 
+													//		JFileChooser.CANCEL_OPTION
+													//		JFileChooser.APPROVE_OPTION
+													//		JFileChooser.ERROR_OPTION if an 
+                                                    //          error occurs or the dialog is dismissed
+
+		/*
+		// Complete the if statement
+		if (result == JFileChooser.APPROVE_OPTION ) {
+			file = fileChooser.getSelectedFile();  // user selected a song so get the selected file
+		}
+		else {
+			file = null; // user clicked Cancel button on dialog or an error occurred
+		}
+		*/
+
+		
+		ArrayList<String> playlist = new ArrayList<String>();
+		
+		File[] filesInDirectory = fileChooser.getCurrentDirectory().listFiles();
+		for (File file : filesInDirectory ) {
+			if(file.getName().toLowerCase().endsWith(".mp3")){
+				playlist.add(file.toString());
+			}
+		}
+		
+		System.out.println("All MP3 files in current are: ");
+		int i = 1;
+		for (File file : filesInDirectory) {
+			System.out.println(i+": "+file.getName());
+			i = i+1;
+		}
+		System.out.print("Please select a song to play (1-"+playlist.size()+") >> ");
+		
+		Scanner select = new Scanner(System.in);
+        String SongIndex = select.nextLine();
+
+        if(Integer.parseInt(SongIndex) >=0 && Integer.parseInt(SongIndex) <= (playlist.size()+1)){
+        	String filePath = playlist.get(Integer.parseInt(SongIndex)-1);
+        	MU.loadFile(filePath);
+        	MU.play();
+        }else
+        {
+        	System.err.println("Invalid Input. Please restart the program and input a number from 1 to"+(playlist.size()+1)+"!!");
+        	System.exit(0);	
+        }
+
+		//File file = fileChooser.getCurrentDirectory().getName();    
+		//String filePath = file.toString();
+        //fileChooser.getCurrentDirectory().getName();
+		
+		//System.out.println("the name of the song is "+filePath);    
+
+  /*     
+        private static void loadMP3(Music MU){
+            boolean validPath;
+            String filePath;
+            Scanner inn = new Scanner(System.in);
+            
+            do{
+                System.out.print("Path to .mp3: ");
+                filePath = inn.nextLine();
+                validPath = MU.loadFile(filePath);
+                if(!validPath){
+                    System.out.println("Invalid path!");
+                }
+            }while(!validPath);
+                
+        }
+        if(filePath == null){
+            System.out.println("No path to a .mp3 in arguements.");
+            loadMP3(MU);
+        }else{
+            if(!MU.loadFile(filePath)){
+                System.err.println("Invalid path!");
+                loadMP3(MU);
+            }
+        }
+*/
+        String input;
+        Scanner inn = new Scanner(System.in);
+        System.out.println("\nPlease select the follow to options >> ");   
+
+        do{
+            System.out.println("1. Play"+"      "+"2. Pause"+"  "+"3. Restart");
+            System.out.println("4. Shuffle"+"   "+"5. Stop"+"   "+"6. Exit");
+            System.out.print(" Select option >> ");
+            input = inn.nextLine();
+
+            if(input.equals("1")){
+                MU.play();
+            }
+            else if(input.equals("2")){
+                MU.pause();
+            }
+            else if(input.equals("3")){
+                MU.restart();
+            }
+            else if(input.equals("4")){ 
+            	//MU.pause();
+            	//Mu.shuffle();
+            	//Music player = new Music();
+            	
+            	MU.stop();
+            	Random random = new Random() ;
+                int randomNumber = random.nextInt(playlist.size());
+                
+            	String newfilePath = playlist.get(randomNumber);
+            	File NewfileName = new File(newfilePath);
+            	
+            	System.out.println("Now is playing song "+(randomNumber+1)+": "+NewfileName.getName());
+            	MU.loadFile(newfilePath);
+            	MU.play();
+            }
+            else if(input.equals("5")){
+            	MU.stop();
+            	System.out.println("**********************************Song playing Stopped!**********************************");
+            	int j = 1;
+        		for (File file : filesInDirectory) {
+        			System.out.println(j+": "+file.getName());
+        			j = j+1;
+        		}
+        		System.out.println("Please select a song to play (1-"+playlist.size()+")");
+        		 
+                Scanner select_2 = new Scanner(System.in);
+                String SongIndex_2 = select_2.nextLine();
+
+                if(Integer.parseInt(SongIndex_2) >=0 && Integer.parseInt(SongIndex_2) <= (playlist.size()+1)){
+                	String filePath_2 = playlist.get(Integer.parseInt(SongIndex_2)-1);
+                	MU.loadFile(filePath_2);
+                	MU.play();
+                }else
+                {
+                	System.err.println("Invalid Input. Please restart the program and input a number from 1 to"+(playlist.size()+1)+"!!");
+                	System.exit(0);	
+                }
+                
+            }
+            else if(input.equals("6")){
+            	System.out.println(" Goodbye! :) ");
+            	System.exit(0);
+            }
+            else{
+                System.err.println("Invalid entry.");
+            }
+        }while(!input.equals("6"));
+        
+        System.exit(0);			
+
+        
+/*		
+        // Open and play the selected song
+		try {  // try the following instructions, if any of them throws an exception (an error occurred)
+				// then catch the exception and show an appropriate error message to the user
+			fis = new FileInputStream(file.toString());
+			bis = new BufferedInputStream(fis);
+			player = new Player(bis);
+			player.play();
+
+		} catch (Exception e) { 
+			JOptionPane.showMessageDialog(null,"Invalid file or location", 
+					"Error loading file", JOptionPane.ERROR_MESSAGE); 
+		} 
+*/	
+	} 
+
+}

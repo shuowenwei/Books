@@ -1,0 +1,22 @@
+
+public class SLList {
+	
+	Node head;
+	Node last; 
+	
+	public void testInsert(){
+		
+	}
+	public void Append(Node n){
+		
+	}
+	public boolean Delete(){
+		return true;
+	
+	}
+	public Node Search(){
+	
+		 
+	}
+
+}

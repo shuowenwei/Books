@@ -1,0 +1,28 @@
+
+public class SLList {
+	
+	Node head;
+	Node last; 
+	
+	public Node getLast(){
+		
+	}
+	
+	
+	
+	public void testInsert(Object obj){
+		
+	}
+	public void Append(Object obj){
+		
+	}
+	public boolean Delete(Object obj){
+		return true;
+	
+	}
+	public Node Search(Object obj){
+		return new Node(null, 0); 
+		 
+	}
+
+}

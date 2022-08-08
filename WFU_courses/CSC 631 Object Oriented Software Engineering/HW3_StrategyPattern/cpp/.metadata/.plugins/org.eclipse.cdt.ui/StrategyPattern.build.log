@@ -1,0 +1,8 @@
+15:55:25 **** Incremental Build of configuration Debug for project StrategyPattern ****
+Info: Internal Builder is used for build
+cl /c /EHs /MD /Zi /nologo "/Fosrc\\StrategyPattern.obj" "..\\src\\StrategyPattern.cpp" 
+StrategyPattern.cpp
+link /debug /nologo /OUT:StrategyPattern.exe "src\\StrategyPattern.obj" 
+
+15:55:30 Build Finished (took 4s.875ms)
+

@@ -1,0 +1,9 @@
+
+public class Node {
+
+	private Node node;
+	private Object data;
+	
+	
+	
+}

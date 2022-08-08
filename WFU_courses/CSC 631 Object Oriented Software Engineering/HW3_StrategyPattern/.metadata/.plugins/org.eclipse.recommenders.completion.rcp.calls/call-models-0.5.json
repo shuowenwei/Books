@@ -1,0 +1,23 @@
+{
+  "D:\\userdata\\Desktop\\CSC 631 Object Oriented Software Engineering\\HW3_StrategyPattern\\StrategyPattern\\src": {
+    "location": "D:\\userdata\\Desktop\\CSC 631 Object Oriented Software Engineering\\HW3_StrategyPattern\\StrategyPattern\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\userdata\\Desktop\\CSC 631 Object Oriented Software Engineering\\HW3_StrategyPattern\\StrategyPattern\\src\u0027. Skipped."
+  },
+  "C:\\Program Files\\Java\\jdk1.7.0_25\\jre\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_25\\jre\\lib\\rt.jar",
+    "status": "RESOLVED",
+    "error": "No class path info available for \u0027C:\\Program Files\\Java\\jdk1.7.0_25\\jre\\lib\\rt.jar\u0027. Skipped."
+  },
+  "D:\\userdata\\Desktop\\CSC 631 Object Oriented Software Engineering\\HW3_StrategyPattern\\ObserverPattern\\src": {
+    "location": "D:\\userdata\\Desktop\\CSC 631 Object Oriented Software Engineering\\HW3_StrategyPattern\\ObserverPattern\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\userdata\\Desktop\\CSC 631 Object Oriented Software Engineering\\HW3_StrategyPattern\\ObserverPattern\\src\u0027. Skipped."
+  },
+  "D:\\userdata\\Desktop\\CSC 631 Object Oriented Software Engineering\\HW3_StrategyPattern\\ModelViewController\\DJView_MVC": {
+    "location": "D:\\userdata\\Desktop\\CSC 631 Object Oriented Software Engineering\\HW3_StrategyPattern\\ModelViewController\\DJView_MVC",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\userdata\\Desktop\\CSC 631 Object Oriented Software Engineering\\HW3_StrategyPattern\\ModelViewController\\DJView_MVC\u0027. Skipped."
+  }
+}

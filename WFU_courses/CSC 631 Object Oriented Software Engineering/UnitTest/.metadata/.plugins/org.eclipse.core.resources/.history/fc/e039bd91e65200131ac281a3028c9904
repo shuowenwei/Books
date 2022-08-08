@@ -1,0 +1,11 @@
+
+public class SLList {
+	
+	Node head;
+	Node last; 
+	
+	public void testInsert(){
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;StrategyPattern_DuckBehavior_cpp/DuckBehavior&apos; to &apos;DuckBehavior.cpp&apos;" description="Rename resource &apos;DuckBehavior&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="DuckBehavior" name="DuckBehavior.cpp" stamp="1384227229169" updateReferences="true"/>
+</session>

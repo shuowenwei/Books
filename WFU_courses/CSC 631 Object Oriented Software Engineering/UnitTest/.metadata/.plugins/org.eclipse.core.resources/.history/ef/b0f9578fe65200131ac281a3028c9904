@@ -1,0 +1,9 @@
+
+public class SLList {
+	
+	Node head;
+	Node last; 
+	
+	
+
+}

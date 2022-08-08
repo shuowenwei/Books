@@ -1,0 +1,12 @@
+
+public class Node {
+
+	private Node nest;
+	private Object data;
+	
+	public Node(){
+		
+		
+	}
+	
+}

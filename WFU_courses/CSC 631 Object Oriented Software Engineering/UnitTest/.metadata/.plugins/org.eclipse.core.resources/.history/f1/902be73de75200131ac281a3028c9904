@@ -1,0 +1,14 @@
+
+public class Node {
+
+	private Node next;
+	private Object data;
+	
+	public Node (Node n, bject o){
+		this.next = n;
+		
+		this.data = o;
+		
+	}
+	
+}

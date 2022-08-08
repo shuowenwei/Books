@@ -1,0 +1,165 @@
+#include <iostream>
+using namespace std;
+
+// ----------------------- Quack interface -------------------------
+class QuackBehaviour
+{
+	public:
+		virtual void quack() = 0; // Abstract class because of this pure virtual function
+};
+
+class Quack : public QuackBehaviour
+{
+	public:
+		void quack()
+		{
+			cout << "Quack" << endl;
+		}
+};
+
+class MuteQuack : public QuackBehaviour
+{
+	public:
+		void quack()
+		{
+			cout << "<<Silence>>" << endl;
+		}
+};
+// ----------------------- End of Quack interface -------------------------
+
+
+// ----------------------- Fly interface -------------------------
+class FlyBehaviour
+{
+	public:
+		virtual void fly() = 0; // Abstract class because of this pure virtual function
+};
+
+class FlyWithWings : public FlyBehaviour
+{
+	public:
+		void fly()
+		{
+			cout << "I'm flying!" << endl;
+		}
+};
+
+class FlyNoWay : public FlyBehaviour
+{
+	public:
+		void fly()
+		{
+			cout << "I can't fly!" << endl;
+		}
+};
+
+class FlyWithRocket : public FlyBehaviour
+{
+	public:
+		void fly()
+		{
+			cout << "I'm flying with a rocket!" << endl;
+		}
+};
+
+
+// ----------------------- Duck superclass -------------------------
+class Duck
+{
+	public:
+		QuackBehaviour *quackBehaviour;
+		FlyBehaviour   *flyBehaviour;
+
+		virtual void display() = 0; // Make this an abstract class by having a pure virtual function
+
+		void performFly()
+		{
+			flyBehaviour->fly();
+		}
+
+		void performQuack()
+				{
+					quackBehaviour->quack();
+				}
+
+		void setQuackBehaviour(QuackBehaviour *qb)
+		{
+			cout << "Changing quack behaviour..." << endl;
+			quackBehaviour = qb;
+		}
+
+		void setFlyBehaviour(FlyBehaviour *fb)
+		{
+			cout << "Changing fly behaviour..." << endl;
+			flyBehaviour = fb;
+		}
+
+		void swim()
+		{
+			cout << "All ducks float, even decoys!" << endl;
+		}
+
+};
+
+
+class MallardDuck : public Duck
+{
+	public:
+		MallardDuck()
+		{
+			quackBehaviour = new Quack();
+			flyBehaviour   = new FlyWithWings();
+		}
+
+		void display()
+		{
+			cout << "I'm a real Mallard duck!" << endl;
+		}
+};
+
+class ModelDuck : public Duck
+{
+	public:
+		ModelDuck()
+		{
+			flyBehaviour   = new FlyNoWay();
+			quackBehaviour = new Quack();
+		}
+
+		void display()
+		{
+			cout << "I'm a model duck" << endl;
+		}
+};
+/*
+class PaintedDuck : public Duck
+{
+	public:
+		PaintedDuck()
+		{
+			quackBehaviour = new MuteQuack();
+			flyBehaviour   = new FlyNoWay();
+		}
+
+		void display()
+		{
+			cout << "I'm a painted wooden duck!" << endl;
+		}
+};
+*/
+
+// ----------------------- End of Duck class and subtypes -------------------------
+
+// ----------------------- The main event -------------------------
+int main()
+{
+	Duck *mallard = new MallardDuck();
+	mallard->performQuack();
+	mallard->performFly();
+
+	Duck *model = new ModelrDuck();
+	model.setFlyBehavior(new FlyRocketPowered());
+	model->performFly();
+
+	return 0;
+}
